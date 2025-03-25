@@ -46,7 +46,7 @@ export const HeroButton = () => {
   };
 
   return (
-    <section className="bg-red-500">
+    <section className="bg-red-500 ">
       <div className="mx-auto h-20 w-full max-w-72 bg-black">
         <motion.button
           ref={ref}

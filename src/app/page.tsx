@@ -10,6 +10,7 @@ const page = () => {
     <div>
     <section id='hero' className='bg-slate-50'>
       <HeroSection/>
+   
     </section>
     <section id='gallery'>
     <Gallery/>
