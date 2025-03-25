@@ -49,18 +49,24 @@ const NavLeft = ({
         <FiMenu />
       </motion.button>
       <Logo />
-      <NavLink text="Solutions" />
-      <NavLink text="Community" />
-      <NavLink text="Pricing" />
-      <NavLink text="Company" />
+      <NavLink text="Schedule" links="#schedule" />
+      <NavLink text="About" links="#about" />
+      <NavLink text="Features" links="#feature" />
+
     </div>
   );
 };
 
-const NavLink = ({ text }: { text: string }) => {
+
+type NavLinkProps = {
+  text: string;
+  links: string;
+};
+
+const NavLink = ({ text, links }: NavLinkProps) => {
   return (
-    <a
-      href="#"
+    <Link
+      href={links}
       rel="nofollow"
       className="hidden lg:block h-[30px] overflow-hidden font-medium"
     >
@@ -70,10 +76,9 @@ const NavLink = ({ text }: { text: string }) => {
           {text}
         </span>
       </motion.div>
-    </a>
+    </Link>
   );
 };
-
 const NavRight = () => {
   return (
     <div className="flex items-center gap-4">

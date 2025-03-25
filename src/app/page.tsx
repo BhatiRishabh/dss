@@ -12,16 +12,16 @@ const page = () => {
       <HeroSection/>
    
     </section>
-    <section id='gallery'>
+    <section id='schedule'>
     <Gallery/>
     </section>
-    <section id='features'>
+    <section id='about'>
       <SwapColumnFeatures/>
     </section>
     <section id='quote'>
     <Quote/>
     </section>
-    <section id='cards'>
+    <section id='feature'>
       <ProgramFeatures/>
     </section>
     
