@@ -24,8 +24,7 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
-    
-    
+
   </div>
   )
 }
