@@ -2,6 +2,8 @@
 import React, { MouseEventHandler, useEffect, useState } from "react";
 import { useAnimate } from "framer-motion";
 
+import { TextSecondary } from "./TextSecondary";
+
 export const HeroSection = () => {
     const [scope, animate] = useAnimate();
   
@@ -56,11 +58,7 @@ export const HeroSection = () => {
           <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl">
             Design Summer School
           </h1>
-          <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-zinc-950 md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            quisquam nemo excepturi officia necessitatibus veritatis enim ipsam!
-            Laudantium, reiciendis officia!
-          </p>
+          <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences"/>
           <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 ">
             Join waitlist
           </button>
