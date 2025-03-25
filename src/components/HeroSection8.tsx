@@ -57,8 +57,8 @@ export const HeroSection = () => {
         </div>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
           <div className=" text-2xl italic font-bold">HCD, CDNM, IIITD Presents</div>
-          <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl">
-            Design <span><AuroraText>Summer</AuroraText></span> School
+          <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl ">
+            Design <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Summer</AuroraText></span> School
           </h1>
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
           <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 ">

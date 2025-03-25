@@ -55,7 +55,7 @@ export const TextSecondary = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className=" text-black text-2xl leading-snug tracking-wide">
+        <div className=" text-black text-2xl leading-snug  tracking-wide">
           {renderWords()}
         </div>
       </div>
