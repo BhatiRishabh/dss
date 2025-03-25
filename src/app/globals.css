@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+:root {
+    --font-helvetica-sans: 'Helvetica, sans-serif';
+  }
+  
+  .font-helvetica {
+    font-family: var(--font-helvetica-sans);
+  }
+  
