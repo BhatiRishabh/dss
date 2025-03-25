@@ -16,6 +16,7 @@ const Helvetica = localFont({
   src: "/fonts/Helvetica.ttf",
   variable: "--font-helvetica-sans",
   weight: "100 900",
+  
 });
 
 
