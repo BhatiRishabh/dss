@@ -26,9 +26,11 @@ export function Quote() {
          
 
         {"    "}
-        <Highlight className="text-black dark:text-white">
-          Steve Jobs
+        <div className="px-10"></div>
+                  <Highlight className="text-black dark:text-white ">
+          Steve Jobs 
         </Highlight>
+        
       </motion.h1>
     </HeroHighlight>
   );
@@ -159,10 +161,10 @@ export const Highlight = ({
       style={{
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left center",
-        display: "block",
+        display: "inline",
       }}
       className={cn(
-        `relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-2 pb-1 dark:from-indigo-500 dark:to-purple-500`,
         className,
       )}
     >

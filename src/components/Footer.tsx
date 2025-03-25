@@ -6,7 +6,7 @@ import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa"; // Font Awes
 
 export function Footer() {
   return (
-    <footer className="w-full dark:bg-zinc-950 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap items-start justify-between md:px-12">
+    <footer className="w-full bg-zinc-950 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap items-start justify-between md:px-12">
       {/* Logo and Description */}
       
       <div className="text-center md:text-left flex flex-col items-center md:items-start">

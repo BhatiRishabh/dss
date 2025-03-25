@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 // import { Inter } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
-
+import Nav from '@/components/Nav'
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,6 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* className={inter.className} */}
+        <div className='w-full bg-[#131313] fixed left-0 z-50'>      <Nav/></div>
+
         {children}
         <Footer/>
       </body>
