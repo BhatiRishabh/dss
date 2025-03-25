@@ -192,16 +192,16 @@ const Schedule = () => {
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-20 text-4xl font-black uppercase text-zinc-950"
       >
-        Launch Schedule
+        Summer School Schedule
       </motion.h1>
 
-      <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
-      <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
-      <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
-      <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
-      <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" />
+      <ScheduleItem title="DAY 01" date="April 9th" location="LHC C102" />
+      <ScheduleItem title="DAY 02" date="April 20th" location="RnD B007" />
+      <ScheduleItem title="DAY 03" date="May 10th" location="RnD 415" />
+      <ScheduleItem title="DAY 04" date="May 22nd" location="RnD A007" />
+      <ScheduleItem title="DAY 05" date="May 31st" location="LHC C101" />
+      <ScheduleItem title="DAY 06" date="June 8th" location="LHC C102" />
+      <ScheduleItem title="DAY 07" date="June 9th" location="RnD A006" />
     </section>
   );
 };
