@@ -8,22 +8,23 @@ import { ProgramFeatures } from '@/components/ProgramFeatures'
 const page = () => {
   return (
     <div>
-      <section>
-        <HeroSection/>
-      </section>
-      <section>
-      <Gallery/>
-      </section>
-      <section>
-      <Quote/>
-      </section>
-      <section>
-        <SwapColumnFeatures/>
-      </section>
-      <section>
-        <ProgramFeatures/>
-      </section>
-      </div>
+    <section id='hero' className='bg-slate-50'>
+      <HeroSection/>
+    </section>
+    <section id='gallery'>
+    <Gallery/>
+    </section>
+    <section id='features'>
+      <SwapColumnFeatures/>
+    </section>
+    <section id='quote'>
+    <Quote/>
+    </section>
+    <section id='cards'>
+      <ProgramFeatures/>
+    </section>
+    
+  </div>
   )
 }
 
