@@ -23,9 +23,6 @@ const page = () => {
       <section>
         <ProgramFeatures/>
       </section>
-      <h1 className='p-4'> Hello Welcome to Design Summer School</h1>
-      <h1 className='p-4'> Hello Welcome to Design Summer School</h1>
-      <h1 className='p-4'> Hello Welcome to Design Summer School</h1>
       </div>
   )
 }
