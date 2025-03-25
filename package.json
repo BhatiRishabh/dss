@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "meow": "npm i && next build && next dev"
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
