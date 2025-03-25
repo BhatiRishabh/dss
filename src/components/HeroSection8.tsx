@@ -3,6 +3,7 @@ import React, { MouseEventHandler, useEffect, useState } from "react";
 import { useAnimate } from "framer-motion";
 
 import { TextSecondary } from "./TextSecondary";
+import { HeroButton } from "./Button";
 
 export const HeroSection = () => {
     const [scope, animate] = useAnimate();
@@ -50,7 +51,7 @@ export const HeroSection = () => {
               id={`square-${i}`}
               onMouseLeave={handleMouseLeave}
               onMouseEnter={handleMouseEnter}
-              className="h-full w-full border-[1px] border-slate-150"
+              className="h-auto w-full border-[1px] border-slate-150"
             />
           ))}
         </div>
@@ -58,10 +59,11 @@ export const HeroSection = () => {
           <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl">
             Design Summer School
           </h1>
-          <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences"/>
+          <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
           <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 ">
-            Join waitlist
+            REGISTER
           </button>
+         {/* <HeroButton/> */}
         </div>
       </div>
     );

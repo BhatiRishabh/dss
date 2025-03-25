@@ -22,10 +22,12 @@ export function Quote() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        With insomnia, nothing&apos;s real. Everything is far away. Everything
-        is a{" "}
+        Design is not just what it looks like and feels like. Design is how it.
+         
+
+        {"    "}
         <Highlight className="text-black dark:text-white">
-          copy, of a copy, of a copy.
+          Steve Jobs
         </Highlight>
       </motion.h1>
     </HeroHighlight>
@@ -157,7 +159,7 @@ export const Highlight = ({
       style={{
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left center",
-        display: "inline",
+        display: "block",
       }}
       className={cn(
         `relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1 dark:from-indigo-500 dark:to-purple-500`,
