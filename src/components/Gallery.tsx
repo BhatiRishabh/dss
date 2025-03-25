@@ -57,7 +57,7 @@ const Hero = () => {
   return (
     <div
       style={{ minHeight: `calc(${SECTION_HEIGHT}px + 100vh)` }}
-      className="relative w-full"
+      className="relative w-full bg-slate-50"
     >
       <CenterImage />
       <ParallaxImages />
