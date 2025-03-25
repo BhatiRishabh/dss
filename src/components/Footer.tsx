@@ -8,6 +8,7 @@ export function Footer() {
   return (
     <footer className="w-full dark:bg-zinc-950 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap items-start justify-between md:px-12">
       {/* Logo and Description */}
+      
       <div className="text-center md:text-left flex flex-col items-center md:items-start">
         <img className="w-40 h-16" src="/images/logo-text.svg" alt="DSS Logo" />
         <p className="my-4 max-w-md text-center md:text-left">
