@@ -4,6 +4,10 @@ import { useAnimate } from "framer-motion";
 import { AuroraText } from "./Text";
 import { TextSecondary } from "./TextSecondary";
 import { HeroButton } from "./Button";
+import { HeroHighlight } from "./Quote";
+import { cn } from "@/lib/utils";
+import { useMotionValue, motion, useMotionTemplate } from "motion/react";
+import { Highlight } from "./Quote";
 
 export const HeroSection = () => {
     const [scope, animate] = useAnimate();
@@ -62,6 +66,13 @@ export const HeroSection = () => {
              <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Design </AuroraText></span> 
              <span className="sm:text-8xl md:text-9xl text-7xl"> <p>Summer School</p></span>
           </h1>
+    
+        
+        <div className="px-10"></div>
+                  <Highlight className="text-black dark:text-white text-2xl mt-4">
+                  <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-white"/>
+                 </Highlight>
+          
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
           <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-4xl font-bold uppercase text-neutral-950 ">
             REGISTER
