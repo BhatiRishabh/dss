@@ -1,49 +1,39 @@
-// hydration err
-"use client"
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import useMeasure from "react-use-measure";
 
 const Schedule = () => {
-  return (<>
+  const scheduleData = [
+    { date: "12th May 2025", topic: "Design Thinking Processes" },
+    { date: "13th May 2025", topic: "Creative Thinking & Character Design" },
+    { date: "14th May 2025", topic: "Sensing & HC AI" },
+    { date: "15th May 2025", topic: "Photography & Videography/Calligraphy" },
+    { date: "16th May 2025", topic: "XR & AR, VR & MR" },
+  ];
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // prevents hydration errors
+
+  return (
     <div className="px-4 py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
-        <h3 className="mb-4 text-center text-3xl font-semibold">
-          Frequently asked questions
-        </h3>
-        <Question title="Why is the sky blue?" defaultOpen>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
-          </p>
-        </Question>
-        <Question title="Why did the chicken cross the road?">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
-          </p>
-        </Question>
-        <Question title="How many licks does it take to get to the center of a tootsie pop?">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
-          </p>
-        </Question>
-        <Question title="Where's Waldo?">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
-          </p>
-        </Question>
+        <h3 className="mb-4 text-center text-3xl font-semibold">Schedule</h3>
+        {scheduleData.map((item, index) => (
+          <Question key={index} title={`${item.date}: ${item.topic}`} defaultOpen={index === 0}>
+            <p>
+              Detailed information about {item.topic} will be provided soon.
+            </p>
+          </Question>
+        ))}
       </div>
     </div>
-    </>
-    
   );
 };
 
@@ -51,10 +41,6 @@ const Question = ({
   title,
   children,
   defaultOpen = false,
-}: {
-  title: string;
-  children: JSX.Element;
-  defaultOpen?: boolean;
 }) => {
   const [ref, { height }] = useMeasure();
   const [open, setOpen] = useState(defaultOpen);
@@ -70,12 +56,8 @@ const Question = ({
       >
         <motion.span
           variants={{
-            open: {
-              color: "rgba(3, 6, 23, 0)",
-            },
-            closed: {
-              color: "rgba(3, 6, 23, 1)",
-            },
+            open: { color: "rgba(3, 6, 23, 0)" },
+            closed: { color: "rgba(3, 6, 23, 1)" },
           }}
           className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-left text-lg font-medium"
         >
@@ -83,14 +65,8 @@ const Question = ({
         </motion.span>
         <motion.span
           variants={{
-            open: {
-              rotate: "180deg",
-              color: "rgb(124 58 237)",
-            },
-            closed: {
-              rotate: "0deg",
-              color: "#030617",
-            },
+            open: { rotate: "180deg", color: "rgb(124 58 237)" },
+            closed: { rotate: "0deg", color: "#030617" },
           }}
         >
           <FiChevronDown className="text-2xl" />
@@ -104,7 +80,7 @@ const Question = ({
         }}
         className="overflow-hidden text-slate-600"
       >
-        <p ref={ref}>{children}</p>
+        <div ref={ref}>{children}</div>
       </motion.div>
     </motion.div>
   );
