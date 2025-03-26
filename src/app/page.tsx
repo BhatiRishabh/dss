@@ -3,10 +3,11 @@ import React from 'react'
 import { Gallery } from '@/components/Gallery'
 import { Quote } from '@/components/Quote'
 import { HeroSection } from '@/components/HeroSection8'
-import { SwapColumnFeatures } from '@/components/FeaturesSection'
+// import { SwapColumnFeatures } from '@/components/FeaturesSection'
 import { ProgramFeatures } from '@/components/ProgramFeatures'
 import { ImageCarousel } from '@/components/ImageCarousel'
 import Features from '@/components/Features'
+import { ThemeSection } from '@/components/Themes'
 const page = () => {
   return (
     <div>
@@ -15,13 +16,7 @@ const page = () => {
       <HeroSection/> 
     </section>
     <ImageCarousel/>
-    <Features/>
-
-
-
-
-
-
+    {/* <Features/> */}
 
     <section id='schedule'>
     {/* <Gallery/> */}
@@ -31,6 +26,9 @@ const page = () => {
     </section>
     <section id='quote'>
     <Quote/>
+    </section>
+    <section id='themes'>
+    <ThemeSection/>
     </section>
     <section id='feature'>
       <ProgramFeatures/>

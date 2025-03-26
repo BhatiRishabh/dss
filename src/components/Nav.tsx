@@ -50,6 +50,7 @@ const NavLeft = ({
       </motion.button>
       <Logo />
       <NavLink text="Schedule" links="#schedule" />
+      <NavLink text="Themes" links="#themes" />
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
 
