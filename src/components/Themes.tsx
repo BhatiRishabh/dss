@@ -24,9 +24,9 @@ export const ThemeSection = () => {
             Our Themes
           </h3>
           <p className="mb-8 mt-4 text-lg text-slate-400">
-            ...but we're going to help. We send out weekly break downs of
-            exactly what's working and what's not for the largest companies in
-            the world. It's free.
+            ...but we&apos;re going to help. We send out weekly break downs of
+            exactly what&apos;s working and what&apos;s not for the largest companies in
+            the world. It&apos;s free.
           </p>
           <form
             onSubmit={(e) => e.preventDefault()}
@@ -121,7 +121,7 @@ const Card = ({
       }`}
     >
       <h4 className="text-2xl font-bold text-center">{title}</h4>
-      <p className="text-center text-lg italic">"{testimonial}"</p>
+      <p className="text-center text-lg italic">&quot;{testimonial}&quot;</p>
       <span className="text-center text-sm font-semibold">{author}</span>
     </motion.div>
   );

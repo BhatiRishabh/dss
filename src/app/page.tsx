@@ -23,7 +23,7 @@ const page = () => {
     <ImageCarousel/>
     {/* <Features/> */}
 
-    <Features/>
+    {/* <Features/> */}
 
 
 
@@ -44,8 +44,6 @@ const page = () => {
     <section id='themes'>
     <ThemeSection/>
     </section>
-
-    <ImageCarousel/>
 
     <section id='feature'>
       <ProgramFeatures/>
