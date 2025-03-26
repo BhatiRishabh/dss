@@ -14,7 +14,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
     "lenis": "^1.2.3",
-    "motion": "^12.5.0",
+    "motion": "^12.6.2",
     "next": "13.5.10",
     "react": "^18",
     "react-dom": "^18",

@@ -27,17 +27,17 @@ export const HeroSection = () => {
       });
     };
   
-    const handleMouseLeave: MouseEventHandler<HTMLDivElement> = (e) => {
-      // @ts-ignore
-      const id = `#${e.target.id}`;
-      animate(id, { background: "rgba(129, 140, 248, 0)" }, { duration: 1.5 });
-    };
+    // const handleMouseLeave: MouseEventHandler<HTMLDivElement> = (e) => {
+    //   // @ts-ignore
+    //   const id = `#${e.target.id}`;
+    //   animate(id, { background: "rgba(129, 140, 248, 0)" }, { duration: 1.5 });
+    // };
   
-    const handleMouseEnter: MouseEventHandler<HTMLDivElement> = (e) => {
-      // @ts-ignore
-      const id = `#${e.target.id}`;
-      animate(id, { background: "rgba(129, 140, 248, 1)" }, { duration: 0.15 });
-    };
+    // const handleMouseEnter: MouseEventHandler<HTMLDivElement> = (e) => {
+    //   // @ts-ignore
+    //   const id = `#${e.target.id}`;
+    //   animate(id, { background: "rgba(129, 140, 248, 1)" }, { duration: 0.15 });
+    // };
   
     return (
       <div className="bg-slate-50">
@@ -49,19 +49,21 @@ export const HeroSection = () => {
             <div
               key={i}
               id={`square-${i}`}
-              onMouseLeave={handleMouseLeave}
-              onMouseEnter={handleMouseEnter}
+              // onMouseLeave={handleMouseLeave}
+              // onMouseEnter={handleMouseEnter}
               className="h-auto w-full border-[1px] border-slate-150"
             />
           ))}
         </div>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
           <div className=" text-2xl italic font-bold">HCD, CDNM, IIITD Presents</div>
+          {/* addLogo of HCD CDNM IIITD */}
           <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl ">
-            Design <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Summer</AuroraText></span> School
+             <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Design </AuroraText></span> 
+             <span className="sm:text-8xl md:text-9xl text-7xl"> <p>Summer School</p></span>
           </h1>
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
-          <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 ">
+          <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-4xl font-bold uppercase text-neutral-950 ">
             REGISTER
           </button>
          {/* <HeroButton/> */}
@@ -69,4 +71,6 @@ export const HeroSection = () => {
       </div>
     );
   };
+
+
   

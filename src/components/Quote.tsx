@@ -22,13 +22,13 @@ export function Quote() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        Design is not just what it looks like and feels like. Design is how it.
+        "Design is not just what it looks like and feels like. Design is how it works."
          
 
         {"    "}
         <div className="px-10"></div>
                   <Highlight className="text-black dark:text-white ">
-          Steve Jobs 
+          -Steve Jobs 
         </Highlight>
         
       </motion.h1>

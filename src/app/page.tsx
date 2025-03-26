@@ -9,8 +9,7 @@ const page = () => {
   return (
     <div>
     <section id='hero' className='bg-slate-50'>
-      <HeroSection/>
-   
+      <HeroSection/> 
     </section>
     <section id='schedule'>
     <Gallery/>

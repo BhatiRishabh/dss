@@ -39,7 +39,7 @@ export const ProgramFeatures = () => {
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex justify-between gap-4">
             <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl text-indigo-500">
-              Were good. <span className="text-neutral-400">Heres why.</span>
+              We&apos;re good. <span className="text-neutral-400">Heres why.</span>
             </h2>
             <div className="flex gap-2">
               <button
@@ -108,6 +108,12 @@ export const ProgramFeatures = () => {
   
   const features = [
     {
+      title: "1st Rank in India",
+      Icon: FiAward,
+      description:
+        "India’s Best institute for Human-Computer Interaction (HCI).",
+    },
+    {
       title: "1:1 Mentorship",
       Icon: FiUsers,
       description:
@@ -131,12 +137,7 @@ export const ProgramFeatures = () => {
       description:
         "Get practical experience through interactive, expert-led workshops designed to boost your skills.",
     },
-    {
-      title: "Shared Accommodation",
-      Icon: FiHome,
-      description:
-        "Need a place to stay? Shared living spaces are available for participants at an additional cost.",
-    },
+    
     {
       title: "Professional Networking",
       Icon: FiShare2,
