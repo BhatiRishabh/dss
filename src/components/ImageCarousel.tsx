@@ -4,7 +4,7 @@ import { Carousel } from "flowbite-react";
 
 export function ImageCarousel() {
   return (
-    <div className=" h-[30rem] scrollbar-hide">
+    <div className=" h-[30rem] scrollbar-hide p-10 bg-slate-50">
       <Carousel pauseOnHover>
         <div className="relative flex h-full items-center justify-center">
           <Image

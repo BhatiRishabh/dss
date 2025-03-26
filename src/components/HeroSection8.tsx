@@ -4,14 +4,12 @@ import { useAnimate } from "framer-motion";
 import { AuroraText } from "./Text";
 import { TextSecondary } from "./TextSecondary";
 import { HeroButton } from "./Button";
-<<<<<<< HEAD
 import Image from "next/image";
-=======
+
 import { HeroHighlight } from "./Quote";
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "motion/react";
 import { Highlight } from "./Quote";
->>>>>>> refs/remotes/origin/main
 
 export const HeroSection = () => {
     const [scope, animate] = useAnimate();
