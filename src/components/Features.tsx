@@ -63,7 +63,7 @@ const Features = () => {
   const shiftRight = () => CAN_SHIFT_RIGHT && setOffset((pv) => pv - CARD_SIZE);
 
   return (
-    <section className="bg-neutral-100 py-10" ref={ref}>
+    <section className="bg-slate-50 py-10" ref={ref}>
       <div className="relative overflow-hidden p-6">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between">
