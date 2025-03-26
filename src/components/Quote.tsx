@@ -22,7 +22,7 @@ export function Quote() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        "Design is not just what it looks like and feels like. Design is how it works."
+        &quot;Design is not just what it looks like and feels like. Design is how it works.&quot;
          
 
         {"    "}
@@ -75,7 +75,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "group relative flex h-[40rem] w-full items-center justify-center bg-white dark:bg-black",
+        "group relative flex h-[20rem] w-full items-center justify-center bg-white dark:bg-black",
         containerClassName,
       )}
       onMouseMove={handleMouseMove}

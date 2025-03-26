@@ -245,7 +245,7 @@ import { GalleryText } from "./GalleryText";
 export function Gallery() {
   return (
     <div className="h-screen p-20 w-full">
-      <GalleryText/>
+      
       <LayoutGrid cards={cards} />
     </div>
   );
