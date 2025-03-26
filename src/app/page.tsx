@@ -7,7 +7,11 @@ import { HeroSection } from '@/components/HeroSection8'
 import { ProgramFeatures } from '@/components/ProgramFeatures'
 import { ImageCarousel } from '@/components/ImageCarousel'
 import Features from '@/components/Features'
+
 import { ThemeSection } from '@/components/Themes'
+
+import Schedule from '@/components/Schedule'
+
 const page = () => {
   return (
     <div>
@@ -15,11 +19,20 @@ const page = () => {
     <section id='hero' className='bg-slate-50'>
       <HeroSection/> 
     </section>
+
     <ImageCarousel/>
     {/* <Features/> */}
 
+    <Features/>
+
+
+
+
+
+
     <section id='schedule'>
     {/* <Gallery/> */}
+    <Schedule/>
     </section>
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
@@ -27,9 +40,13 @@ const page = () => {
     <section id='quote'>
     <Quote/>
     </section>
+
     <section id='themes'>
     <ThemeSection/>
     </section>
+
+    <ImageCarousel/>
+
     <section id='feature'>
       <ProgramFeatures/>
     </section>

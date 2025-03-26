@@ -4,6 +4,8 @@ import { useAnimate } from "framer-motion";
 import { AuroraText } from "./Text";
 import { TextSecondary } from "./TextSecondary";
 import { HeroButton } from "./Button";
+import Image from "next/image";
+
 import { HeroHighlight } from "./Quote";
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "motion/react";
@@ -60,7 +62,11 @@ export const HeroSection = () => {
           ))}
         </div>
         <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
-          <div className=" text-2xl italic font-bold">HCD, CDNM, IIITD Presents</div>
+        <Image alt="hcd"src="/logos/Logo.png" width="600"height="600"/>
+          {/* <div className="flex sm:flex-row flex-col"><Image alt="hcd"src="/logos/3.svg" width="300"height="300"/>
+          <Image alt="hcd"src="/logos/1.svg" width="150"height="150"/>
+          <Image alt="hcd"src="/logos/2.svg" width="200"height="200"/></div> */}
+          <div className="mb-4 text-3xl italic font-bold">Presents</div>
           {/* addLogo of HCD CDNM IIITD */}
           <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl ">
              <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Design </AuroraText></span> 
