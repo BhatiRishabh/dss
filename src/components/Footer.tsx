@@ -53,8 +53,10 @@ export function Footer() {
         <h2 className="font-bold text-xl mt-4 text-white">Contact Us</h2>
         <div className="w-32 h-1 border-b-2 border-indigo-400 rounded-2xl my-2"></div>
         {/* <p className="text-gray-400">dss@iiiitd.ac.in</p> */}
-        <p className="text-gray-400">Department of Human Centered Design, IIIT-Delhi</p>
-        <p className="text-gray-400">Okhla Phase III, New Delhi, Delhi 110020</p>
+        <p className="text-gray-400">Indraprastha Institute of Information Technology Delhi</p>
+        <p className="text-gray-400">Okhla Phase III,</p>
+        <p className="text-gray-400">New Delhi,</p>
+        <p className="text-gray-400">Delhi 110020</p>
         <p className="text-gray-400">
           Email:{" "}
           <a href="mailto:dss@iiiitd.ac.in" className="underline">

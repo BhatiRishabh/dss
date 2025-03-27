@@ -68,7 +68,7 @@ export const HeroSection = () => {
           <Image alt="hcd"src="/logos/2.svg" width="200"height="200"/></div> */}
           <div className="mb-4 text-3xl italic font-bold">Presents</div>
           {/* addLogo of HCD CDNM IIITD */}
-          <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl ">
+          <h1 className="text-center text-7xl font-black uppercase text-black sm:text-8xl md:text-9xl  ">
              <span className="sm:text-8xl md:text-9xl text-7xl"><AuroraText>Design </AuroraText></span> 
              <span className="sm:text-8xl md:text-9xl text-7xl"> <p>Summer School</p></span>
           </h1>
@@ -76,7 +76,7 @@ export const HeroSection = () => {
         
         <div className="px-10"></div>
                   <Highlight className="text-black dark:text-white text-2xl mt-4">
-                  <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-white"/>
+                  <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-black "/>
                  </Highlight>
           
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>

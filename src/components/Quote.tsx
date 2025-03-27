@@ -22,12 +22,12 @@ export function Quote() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        &quot;Design is not just what it looks like and feels like. Design is how it works.&quot;
+        &quot;Design is the silent ambassador of your brand.&quot;
          
 
         {"    "}
         <div className="px-10"></div>
-          -Steve Jobs 
+          -Paul Rand, IBM
       </motion.h1>
     </HeroHighlight>
   );
@@ -161,7 +161,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-2 pb-1 dark:from-indigo-500 dark:to-purple-500`,
+        `relative inline-block rounded bg-gradient-to-r from-indigo-200 to-indigo-400 px-2 pb-1 dark:from-indigo-500 dark:to-indigo-300`,
         className,
       )}
     >
