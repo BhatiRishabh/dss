@@ -27,10 +27,7 @@ export function Quote() {
 
         {"    "}
         <div className="px-10"></div>
-                  <Highlight className="text-black dark:text-white ">
           -Steve Jobs 
-        </Highlight>
-        
       </motion.h1>
     </HeroHighlight>
   );
