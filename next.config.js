@@ -2,22 +2,15 @@ const withFlowbiteReact = require("flowbite-react/plugin/nextjs");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enable static export
-  reactStrictMode: true, // Enable React Strict Mode
-
-  images: {
-    unoptimized: true,
+  // output: 'export', // Enable static export
+  // basePath: '/dss',  // Add this line
+  experimental: {
+    appDir: true,  // Enable if you're using App router
   },
+  trailingSlash: true, // Optional: ensures all routes have a trailing slash in the URL
+    images: {
+      unoptimized: true,
+      },
+}
 
-  // images: {
-  //   remotePatterns: [
-  //     {
-  //       protocol: "https",
-  //       hostname: "encrypted-tbn0.gstatic.com",
-  //       pathname: "/**", // Allow all images from this domain
-  //     },
-  //   ],
-  // },
-};
-
-module.exports = withFlowbiteReact(nextConfig);
+module.exports = withFlowbiteReact(nextConfig)
