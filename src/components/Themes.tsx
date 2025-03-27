@@ -3,18 +3,25 @@ import { useRef, useState } from "react";
 
 type ListOrderItem = "front" | "middle" | "back";
 
+const COLORS = ["bg-indigo-500", "bg-pink-400", "bg-green-300"];
+
 export const ThemeSection = () => {
-  const [order, setOrder] = useState<ListOrderItem[]>([
-    "front",
-    "middle",
-    "back",
-  ]);
+  const [order, setOrder] = useState<ListOrderItem[]>(["front", "middle", "back"]);
+  const [frontColorIndex, setFrontColorIndex] = useState(0); // Tracks color for front card
 
   const handleShuffle = () => {
-    const orderCopy = [...order];
-    orderCopy.unshift(orderCopy.pop() as ListOrderItem);
-    setOrder(orderCopy);
+    // Rotate the card positions
+    const newOrder = [...order];
+    newOrder.unshift(newOrder.pop() as ListOrderItem);
+    setOrder(newOrder);
+
+    // Cycle the front card color index
+    setFrontColorIndex((prev) => (prev + 1) % COLORS.length);
   };
+
+  // Assign front color only to the card with position 'front'
+  const getCardColor = (position: ListOrderItem) =>
+    position === "front" ? COLORS[frontColorIndex] : "bg-slate-200";
 
   return (
     <section className="overflow-hidden bg-slate-50 px-8 py-24 text-zinc-950">
@@ -40,10 +47,11 @@ export const ThemeSection = () => {
         <div className="relative h-[450px] w-[350px]">
           <Card
             title="Master AR-VR Class"
-            testimonial="Learn how to design and develop interactive augmented and virtual reality experiences. This session covers the fundamentals of XR, practical applications, and the latest tools used in the industry. ."
+            testimonial="Learn how to design and develop interactive augmented and virtual reality experiences. This session covers the fundamentals of XR, practical applications, and the latest tools used in the industry."
             author=""
             handleShuffle={handleShuffle}
             position={order[0]}
+            bgColor="bg-green-300"
           />
           <Card
             title="Creative Thinking & Character Design"
@@ -51,6 +59,7 @@ export const ThemeSection = () => {
             author=""
             handleShuffle={handleShuffle}
             position={order[1]}
+            bgColor="bg-pink-400"
           />
           <Card
             title="Photography & Videography"
@@ -58,6 +67,7 @@ export const ThemeSection = () => {
             author=""
             handleShuffle={handleShuffle}
             position={order[2]}
+            bgColor="bg-indigo-500"
           />
         </div>
       </div>
@@ -71,6 +81,7 @@ interface CardProps {
   position: ListOrderItem;
   title: string;
   author: string;
+  bgColor: string;
 }
 
 const Card = ({
@@ -79,6 +90,7 @@ const Card = ({
   position,
   title,
   author,
+  bgColor,
 }: CardProps) => {
   const mousePosRef = useRef(0);
 
@@ -97,13 +109,6 @@ const Card = ({
     position === "front" ? "-6deg" : position === "middle" ? "0deg" : "6deg";
   const zIndex = position === "front" ? "2" : position === "middle" ? "1" : "0";
   const draggable = position === "front";
-
-  const bgColor =
-    position === "front"
-      ? "bg-indigo-500"
-      : position === "middle"
-      ? "bg-pink-400"
-      : "bg-green-300";
 
   return (
     <motion.div
