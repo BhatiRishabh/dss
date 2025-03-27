@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
-
+import Image from "next/image";
 const CARD_WIDTH = 480;
 const CARD_HEIGHT = 270; // Exactly 16:9 aspect ratio
 const MARGIN = 30;
@@ -112,7 +112,7 @@ const Post = ({ imgUrl, author, title, description }: PostProps) => (
     className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-2"
     style={{ width: CARD_WIDTH, marginRight: MARGIN }}
   >
-    <img
+    <Image
       src={imgUrl}
       className={`mb-4 h-[${CARD_HEIGHT}px] w-full rounded-lg object-cover`}
       alt={`An image for a blog post titled ${title}`}
