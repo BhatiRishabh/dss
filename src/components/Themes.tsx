@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 type ListOrderItem = "front" | "middle" | "back";
 
@@ -7,19 +8,16 @@ const COLORS = ["bg-indigo-500", "bg-pink-400", "bg-green-300"];
 
 export const ThemeSection = () => {
   const [order, setOrder] = useState<ListOrderItem[]>(["front", "middle", "back"]);
-  const [frontColorIndex, setFrontColorIndex] = useState(0); // Tracks color for front card
+  const [frontColorIndex, setFrontColorIndex] = useState(0);
 
   const handleShuffle = () => {
-    // Rotate the card positions
     const newOrder = [...order];
     newOrder.unshift(newOrder.pop() as ListOrderItem);
     setOrder(newOrder);
 
-    // Cycle the front card color index
     setFrontColorIndex((prev) => (prev + 1) % COLORS.length);
   };
 
-  // Assign front color only to the card with position 'front'
   const getCardColor = (position: ListOrderItem) =>
     position === "front" ? COLORS[frontColorIndex] : "bg-slate-200";
 
@@ -39,42 +37,37 @@ export const ThemeSection = () => {
             </button>
           </form>
         </div>
-        
+
         {/* Cards container */}
         <div className="relative flex flex-col items-center">
           <div className="relative h-[450px] w-[350px]">
             <Card
               title="Master AR-VR Class"
-              testimonial="Learn how to design and develop interactive augmented and virtual reality experiences. This session covers the fundamentals of XR, practical applications, and the latest tools used in the industry."
-              author=""
               handleShuffle={handleShuffle}
               position={order[0]}
               bgColor="bg-green-300"
+              imgSrc="/img/4.jpg"
             />
             <Card
               title="Creative Thinking & Character Design"
-              testimonial="Unleash your imagination with this creative thinking and character design session. Learn how to develop unique and memorable characters through storytelling, visual exploration, and design techniques."
-              author=""
               handleShuffle={handleShuffle}
               position={order[1]}
               bgColor="bg-pink-400"
+              imgSrc="/img/3.jpg"
             />
             <Card
               title="Photography & Videography"
-              testimonial="Master the art of visual storytelling in this dynamic photography and videography class. From capturing stunning images to filming high-quality videos, this session covers composition, lighting, and editing techniques."
-              author=""
               handleShuffle={handleShuffle}
               position={order[2]}
               bgColor="bg-indigo-500"
+              imgSrc="/img/1.jpg"
             />
           </div>
-  
+
           {/* "Swipe" text below the cards */}
           <p className="mt-4 text-lg font-semibold text-gray-500 flex items-center gap-2 animate-[bounce-horizontal_1.5s_infinite]">
-  Swipe <span className="text-2xl">→</span>
-</p>
-
-        
+            Swipe <span className="text-2xl">→</span>
+          </p>
         </div>
       </div>
     </section>
@@ -83,20 +76,18 @@ export const ThemeSection = () => {
 
 interface CardProps {
   handleShuffle: Function;
-  testimonial: string;
   position: ListOrderItem;
   title: string;
-  author: string;
   bgColor: string;
+  imgSrc: string;
 }
 
 const Card = ({
   handleShuffle,
-  testimonial,
   position,
   title,
-  author,
   bgColor,
+  imgSrc,
 }: CardProps) => {
   const mousePosRef = useRef(0);
 
@@ -131,9 +122,14 @@ const Card = ({
         draggable ? "cursor-grab active:cursor-grabbing" : ""
       }`}
     >
+      <Image
+        src={imgSrc}
+        alt={title}
+        width={128}
+        height={128}
+        className="mx-auto h-60 w-60 rounded-full border-1 border-slate-700 bg-slate-200 object-cover"
+      />
       <h4 className="text-2xl font-bold text-center">{title}</h4>
-      <p className="text-center text-lg italic">&quot;{testimonial}&quot;</p>
-      <span className="text-center text-sm font-semibold">{author}</span>
     </motion.div>
   );
 };
