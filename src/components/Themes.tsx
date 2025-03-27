@@ -30,45 +30,51 @@ export const ThemeSection = () => {
           <h3 className="text-5xl font-black leading-[1.25] md:text-7xl">
             Our Themes
           </h3>
-          <p className="mb-8 mt-4 text-lg text-slate-400">
-            ...but we&apos;re going to help. We send out weekly break downs of
-            exactly what&apos;s working and what&apos;s not for the largest companies in
-            the world. It&apos;s free.
-          </p>
           <form
             onSubmit={(e) => e.preventDefault()}
             className="flex items-center gap-2"
           >
-            <button className="whitespace-nowrap rounded bg-indigo-600 px-3 py-2 transition-transform hover:scale-[1.02] active:scale-[0.98]">
-              Register Now
+            <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-2xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100 mt-6">
+              Register
             </button>
           </form>
         </div>
-        <div className="relative h-[450px] w-[350px]">
-          <Card
-            title="Master AR-VR Class"
-            testimonial="Learn how to design and develop interactive augmented and virtual reality experiences. This session covers the fundamentals of XR, practical applications, and the latest tools used in the industry."
-            author=""
-            handleShuffle={handleShuffle}
-            position={order[0]}
-            bgColor="bg-green-300"
-          />
-          <Card
-            title="Creative Thinking & Character Design"
-            testimonial="Unleash your imagination with this creative thinking and character design session. Learn how to develop unique and memorable characters through storytelling, visual exploration, and design techniques."
-            author=""
-            handleShuffle={handleShuffle}
-            position={order[1]}
-            bgColor="bg-pink-400"
-          />
-          <Card
-            title="Photography & Videography"
-            testimonial="Master the art of visual storytelling in this dynamic photography and videography class. From capturing stunning images to filming high-quality videos, this session covers composition, lighting, and editing techniques."
-            author=""
-            handleShuffle={handleShuffle}
-            position={order[2]}
-            bgColor="bg-indigo-500"
-          />
+        
+        {/* Cards container */}
+        <div className="relative flex flex-col items-center">
+          <div className="relative h-[450px] w-[350px]">
+            <Card
+              title="Master AR-VR Class"
+              testimonial="Learn how to design and develop interactive augmented and virtual reality experiences. This session covers the fundamentals of XR, practical applications, and the latest tools used in the industry."
+              author=""
+              handleShuffle={handleShuffle}
+              position={order[0]}
+              bgColor="bg-green-300"
+            />
+            <Card
+              title="Creative Thinking & Character Design"
+              testimonial="Unleash your imagination with this creative thinking and character design session. Learn how to develop unique and memorable characters through storytelling, visual exploration, and design techniques."
+              author=""
+              handleShuffle={handleShuffle}
+              position={order[1]}
+              bgColor="bg-pink-400"
+            />
+            <Card
+              title="Photography & Videography"
+              testimonial="Master the art of visual storytelling in this dynamic photography and videography class. From capturing stunning images to filming high-quality videos, this session covers composition, lighting, and editing techniques."
+              author=""
+              handleShuffle={handleShuffle}
+              position={order[2]}
+              bgColor="bg-indigo-500"
+            />
+          </div>
+  
+          {/* "Swipe" text below the cards */}
+          <p className="mt-4 text-lg font-semibold text-gray-500 flex items-center gap-2 animate-[bounce-horizontal_1.5s_infinite]">
+  Swipe <span className="text-2xl">→</span>
+</p>
+
+        
         </div>
       </div>
     </section>

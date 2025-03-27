@@ -75,14 +75,15 @@ export const HeroSection = () => {
     
         
         <div className="px-10"></div>
-                  <Highlight className="text-black dark:text-white text-2xl mt-4">
+                  
                   <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-black "/>
-                 </Highlight>
+                 
           
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
-          <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-4xl font-bold uppercase text-neutral-950 ">
-            REGISTER
-          </button>
+          <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-3xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
+  Register
+</button>
+
          {/* <HeroButton/> */}
         </div>
       </div>

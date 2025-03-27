@@ -49,10 +49,11 @@ const NavLeft = ({
         <FiMenu />
       </motion.button>
       <Logo />
-      <NavLink text="Schedule" links="#schedule" />
       <NavLink text="Themes" links="#themes" />
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
+      <NavLink text="Schedule" links="#schedule" />
+      
 
     </div>
   );
@@ -90,13 +91,17 @@ const NavRight = () => {
       >
         Reach out
       </motion.button>
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
       >
         Register
-      </motion.button>
+      </motion.button> */}
+      <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3  font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
+  Register
+</button>
+
     </div>
   );
 };
@@ -109,10 +114,10 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="Solutions" />
-      <MenuLink text="Community" />
-      <MenuLink text="Pricing" />
-      <MenuLink text="Company" />
+      <MenuLink text="Themes"  />
+      <MenuLink text="About" />
+      <MenuLink text="Features" />
+      <MenuLink text="Schedule" />
     </motion.div>
   );
 };
