@@ -10,7 +10,7 @@ export function Footer() {
       {/* Logo and Description */}
       
       <div className="text-center md:text-left flex flex-col items-center md:items-start">
-        <img className="w-20 h-auto bg-slate-50 p-4 rounded-lg" src="/img/Logo.png" alt="DSS Logo" />
+        <img className="w-40 h-auto bg-slate-50 p-2 rounded-lg items-center" src="/img/Logo.png" alt="DSS Logo" />
         {/* <p className="my-4 max-w-md text-center md:text-left">
         Transforming creative minds into design professionals through immersive learning experiences. 
         Organized by Department of Human Centered Design in collaboration with Center for Design and New Media
@@ -66,8 +66,11 @@ export function Footer() {
       </div>
 
       {/* Copyright Section */}
+      
+      
       <div className="w-full text-center pb-3 text-gray-500 mt-5">
-        <p>&copy; 2025 Design Summer School. All Rights Reserved.</p>
+      <hr />
+        <p className="mt-4">&copy; 2025 Design Summer School. All Rights Reserved.</p>
       </div>
     </footer>
   );
