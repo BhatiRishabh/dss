@@ -7,7 +7,7 @@ import { HeroSection } from '@/components/HeroSection8'
 import { ProgramFeatures } from '@/components/ProgramFeatures'
 import { ImageCarousel } from '@/components/ImageCarousel'
 import Features from '@/components/Features'
-
+import Map from '@/components/Map'
 import { ThemeSection } from '@/components/Themes'
 import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
@@ -48,7 +48,8 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
-
+    <Map/>
+    
   </div>
   )
 }
