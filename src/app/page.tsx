@@ -20,8 +20,10 @@ const page = () => {
     <section id='hero' className='bg-slate-50'>
       <HeroSection/> 
     </section>
-
-    <ImageCarousel/>
+    <section> 
+      <ImageCarousel/>
+    </section>
+   
     {/* <Features/> */}
 
     {/* <Features/> */}
@@ -29,7 +31,7 @@ const page = () => {
 
 
 
-   <FAQ/>
+   
 
     <section id='schedule'>
     {/* <Gallery/> */}
@@ -49,6 +51,9 @@ const page = () => {
 
     <section id='feature'>
       <ProgramFeatures/>
+    </section>
+    <section id='faqs'>
+    <FAQ/>
     </section>
     <section>
     <Map/>
