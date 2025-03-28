@@ -9,7 +9,7 @@ import { ImageCarousel } from '@/components/ImageCarousel'
 import Features from '@/components/Features'
 
 import { ThemeSection } from '@/components/Themes'
-
+import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
 
 const page = () => {
@@ -28,7 +28,7 @@ const page = () => {
 
 
 
-
+   <FAQ/>
 
     <section id='schedule'>
     {/* <Gallery/> */}
