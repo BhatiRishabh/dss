@@ -17,7 +17,7 @@ export function SpeakerSection() {
                 </a>
                 <div className="p-5">
                     <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Bonnie Green</a>
+                        <a href="#">Aman Samuel</a>
                     </h3>
                     <span className="text-gray-500 dark:text-gray-400">MBA, University of Madras</span>
                     <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical strategy of the flowbite platform and brand.</p>
@@ -51,7 +51,7 @@ export function SpeakerSection() {
                 </a>
                 <div className="p-5">
                     <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Jese Leos</a>
+                        <a href="#">Anmol Srivastav</a>
                     </h3>
                     <span className="text-gray-500 dark:text-gray-400">PhD, IIT Guwahati</span>
                     <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Jese drives the technical strategy of the flowbite platform and brand.</p>
@@ -85,7 +85,7 @@ export function SpeakerSection() {
                 </a>
                 <div className="p-5">
                     <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Michael Gough</a>
+                        <a href="#">Richa Gupta</a>
                     </h3>
                     <span className="text-gray-500 dark:text-gray-400">PhD, IIT Delhi</span>
                     <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Michael drives the technical strategy of the flowbite platform and brand.</p>
@@ -115,11 +115,11 @@ export function SpeakerSection() {
             </div> 
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <Image height={25} width={25} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/img/sonal.jpg" alt="Sonal Avatar"/>
+                    <Image height={25} width={25} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/img/SonalMaam.jpg" alt="Sonal Avatar"/>
                 </a>
                 <div className="p-5">
                     <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">Lana Byrd</a>
+                        <a href="#">Sonal Keshwani</a>
                     </h3>
                     <span className="text-gray-500 dark:text-gray-400">PhD, IISc</span>
                     <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
