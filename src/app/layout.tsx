@@ -9,7 +9,7 @@ import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: 'DSS 2025',
-  description: 'Design Summer School 2025',
+  description: 'Our 5 Day Design Summer School is aimed at Networking, Learning, and Developing design solutions for real-world problems. Learn from the best in the industry.',
 }
 
 const Helvetica = localFont({
