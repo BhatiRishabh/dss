@@ -115,7 +115,7 @@ export function SpeakerSection() {
             </div> 
             <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <Image height={25} width={25} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/img/sonal.jpg" alt="Sonal Avatar"/>
+                    <Image height={25} width={25} className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="/img/SonalMaam.jpg" alt="Sonal Avatar"/>
                 </a>
                 <div className="p-5">
                     <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
