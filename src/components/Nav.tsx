@@ -98,9 +98,11 @@ const NavRight = () => {
       >
         Register
       </motion.button> */}
+      <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">
       <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3  font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
   Register
 </button>
+</Link>
 
     </div>
   );

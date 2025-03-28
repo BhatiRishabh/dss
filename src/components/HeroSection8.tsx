@@ -5,7 +5,7 @@ import { AuroraText } from "./Text";
 import { TextSecondary } from "./TextSecondary";
 import { HeroButton } from "./Button";
 import Image from "next/image";
-
+import Link from "next/link";
 import { HeroHighlight } from "./Quote";
 import { cn } from "@/lib/utils";
 import { useMotionValue, motion, useMotionTemplate } from "motion/react";
@@ -75,14 +75,15 @@ export const HeroSection = () => {
     
         
         <div className="px-10"></div>
-                  
                   <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-black "/>
                  
           
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
+          <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">
           <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-3xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
   Register
 </button>
+</Link>
 
          {/* <HeroButton/> */}
         </div>
