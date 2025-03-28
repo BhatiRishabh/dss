@@ -50,7 +50,10 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
+    <section>
     <Map/>
+    </section>
+    
     
 
     {/* <section id='speakers'>
