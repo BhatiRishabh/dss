@@ -108,7 +108,7 @@ export const ProgramFeatures = () => {
   
   const features = [
     {
-      title: "1st Rank in India",
+      title: "Leading Institute for HCI",
       Icon: FiAward,
       description:
         "India’s Best institute for Human-Computer Interaction (HCI).",
