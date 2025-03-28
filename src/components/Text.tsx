@@ -155,7 +155,7 @@ interface AuroraTextProps {
         }}
       >
         {/* Hidden text for SEO */}
-        <span className="sr-only">{children}</span>
+        <span className="sr-only sm:text-8xl md:text-9xl text-7xl">{children}</span>
   
         {/* Visual placeholder while canvas loads */}
         <span
@@ -210,15 +210,6 @@ interface AuroraTextProps {
           />
         </div>
       </span>
-    );
-  }
-  
-  
-  export function Text7Example() {
-    return (
-      <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl">
-        Digital <AuroraText>drz</AuroraText>
-      </h1>
     );
   }
   
