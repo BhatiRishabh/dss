@@ -26,8 +26,9 @@ export function Quote() {
          
 
         {"    "}
-        <div className="px-10"></div>
-          -Paul Rand, IBM
+        <div className="px-10"> </div>
+        <p className="text-xl py-2"> -Paul Rand, IBM</p>
+         
       </motion.h1>
     </HeroHighlight>
   );
