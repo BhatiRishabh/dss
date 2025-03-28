@@ -66,7 +66,7 @@ export const ThemeSection = () => {
 
           {/* "Swipe" text below the cards */}
           <p className="mt-4 text-lg font-semibold text-gray-500 flex items-center gap-2 animate-[bounce-horizontal_1.5s_infinite]">
-            Swipe <span className="text-2xl">→</span>
+            Swipe the above cards<span className="text-2xl">→</span>
           </p>
         </div>
       </div>
