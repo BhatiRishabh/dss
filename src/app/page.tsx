@@ -11,6 +11,7 @@ import Features from '@/components/Features'
 import { ThemeSection } from '@/components/Themes'
 import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
+import { SpeakerSection } from '@/components/SpeakerSection'
 
 const page = () => {
   return (
@@ -34,6 +35,7 @@ const page = () => {
     {/* <Gallery/> */}
     <Schedule/>
     </section>
+    
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
     </section>
@@ -48,6 +50,10 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
+    {/* <section id='speakers'>
+      <SpeakerSection/>
+      </section> */}
+
 
   </div>
   )
