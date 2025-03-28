@@ -11,6 +11,7 @@ import Map from '@/components/Map'
 import { ThemeSection } from '@/components/Themes'
 import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
+import { SpeakerSection } from '@/components/SpeakerSection'
 
 const page = () => {
   return (
@@ -34,6 +35,7 @@ const page = () => {
     {/* <Gallery/> */}
     <Schedule/>
     </section>
+    
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
     </section>
@@ -50,6 +52,12 @@ const page = () => {
     </section>
     <Map/>
     
+
+    {/* <section id='speakers'>
+      <SpeakerSection/>
+      </section> */}
+
+
   </div>
   )
 }
