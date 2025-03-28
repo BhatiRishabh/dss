@@ -6,6 +6,7 @@ import useMeasure from "react-use-measure";
 
 const FAQ = () => {
   return (
+    <>
     <div className="px-4 py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
         <h3 className="mb-4 text-center text-3xl font-semibold">
@@ -41,6 +42,7 @@ const FAQ = () => {
         </Question>
       </div>
     </div>
+    </>
   );
 };
 
