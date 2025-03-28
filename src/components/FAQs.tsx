@@ -11,28 +11,28 @@ const FAQ = () => {
         <h3 className="mb-4 text-center text-3xl font-semibold">
           Frequently asked questions
         </h3>
-        <Question title="Why is the sky blue?" defaultOpen>
+        <Question title="Is the program open to beginners, or do I need prior design experience?" defaultOpen>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
           </p>
         </Question>
-        <Question title="Why did the chicken cross the road?">
+        <Question title="What is the registration deadline?">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
           </p>
         </Question>
-        <Question title="How many licks does it take to get to the center of a tootsie pop?">
+        <Question title="Can I attend only specific sessions, or is it mandatory to attend the entire program?">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
             perspiciatis ad vero.
           </p>
         </Question>
-        <Question title="Where's Waldo?">
+        <Question title="What is the Design Summer School, and who is it for">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
