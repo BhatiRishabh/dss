@@ -12,6 +12,7 @@ import { ThemeSection } from '@/components/Themes'
 import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
 import { SpeakerSection } from '@/components/SpeakerSection'
+import Aboutus from '@/components/Aboutus'
 
 const page = () => {
   return (
@@ -40,7 +41,9 @@ const page = () => {
     
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
+      <Aboutus/>
     </section>
+
     <section id='quote'>
     <Quote/>
     </section>
