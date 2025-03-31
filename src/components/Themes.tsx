@@ -125,8 +125,8 @@ const Card = ({
       <Image
         src={imgSrc}
         alt={title}
-        width={128}
-        height={128}
+        width={400}
+        height={400}
         className="mx-auto h-60 w-60 rounded-full border-1 border-slate-700 bg-slate-200 object-cover"
       />
       <h4 className="text-2xl font-bold text-center">{title}</h4>
