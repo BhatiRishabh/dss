@@ -10,7 +10,9 @@
   .font-helvetica {
     font-family: var(--font-helvetica-sans);
   }
-  
+  @layer components {
+   
+  }
 @keyframes bounce-horizontal {
   0%, 100% {
     transform: translateX(0);
