@@ -52,9 +52,9 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
-    <section id='faqs'>
+    {/* <section id='faqs'>
     <FAQ/>
-    </section>
+    </section> */}
     <section>
     <Map/>
     </section>
