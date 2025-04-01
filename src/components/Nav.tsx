@@ -116,20 +116,20 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="Themes"  />
-      <MenuLink text="About" />
-      <MenuLink text="Features" />
-      <MenuLink text="Schedule" />
+      <MenuLink text="Themes" links="#themes" />
+      <MenuLink text="About" links="#about"/>
+      <MenuLink text="Features" links="#feature"/>
+      <MenuLink text="Schedule" links="#schedule" />
     </motion.div>
   );
 };
 
-const MenuLink = ({ text }: { text: string }) => {
+const MenuLink = ({ text,links }: { text: string,links:string }) => {
   return (
     <motion.a
       variants={menuLinkVariants}
       rel="nofollow"
-      href="#"
+      href={links}
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>
