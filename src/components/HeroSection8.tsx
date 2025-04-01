@@ -70,8 +70,10 @@ export const HeroSection = () => {
           <div className="mb-4 text-3xl italic font-bold">Presents</div>
           {/* addLogo of HCD CDNM IIITD */}
           <h1 className="text-center sm:text-7xl md:text-8xl text-6xl font-black uppercase text-black  ">
-             <span className="sm:text-7xl md:text-8xl text-6xl"><AuroraText>Design </AuroraText></span> 
-             <span className="sm:text-7xl md:text-8xl text-6xl"> <p>Summer School</p></span>
+          <span className="text-6xl sm:text-7xl md:text-8xl bg-gradient-to-r from-[#D8ECFF] via-[#56C1FF] to-[#EA80FC] bg-clip-text text-transparent font-bold tracking-tight">
+  DESIGN
+</span>
+   <span className="sm:text-7xl md:text-8xl text-6xl"> <p>Summer School</p></span>
           </h1>
     
         
