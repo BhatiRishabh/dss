@@ -148,14 +148,14 @@ interface AuroraTextProps {
     return (
       <span
         ref={containerRef}
-        className={`relative inline-block align-middle ${className}`}
+        className={`relative inline-block align-middle  sm:text-7xl md:text-8xl text-6xl ${className}`}
         style={{
           width: dimensions.width || "auto",
           height: dimensions.height || "auto",
         }}
       >
         {/* Hidden text for SEO */}
-        <span className="sr-only sm:text-8xl md:text-9xl text-7xl">{children}</span>
+        <span className="sr-only sm:text-7xl md:text-8xl text-6xl">{children}</span>
   
         {/* Visual placeholder while canvas loads */}
         <span
