@@ -49,7 +49,7 @@ export const HeroSection = () => {
       <div className="bg-slate-50">
         <div
           ref={scope}
-          className="grid h-[120vh] w-full grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] grid-rows-[repeat(auto-fit,_minmax(75px,_1fr))]"
+          className="grid h-[120vh]  w-full grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] grid-rows-[repeat(auto-fit,_minmax(75px,_1fr))]"
 
         >
           {[...Array(size.rows * size.columns)].map((_, i) => (
@@ -62,7 +62,7 @@ export const HeroSection = () => {
             />
           ))}
         </div>
-        <div className=" pt-[20vh] pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
+        <div className=" pt-[20vh] sm:pt-[5vh] pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
         <Image alt="hcd"src="/logos/Logo.png" width="600"height="600"/>
           {/* <div className="flex sm:flex-row flex-col"><Image alt="hcd"src="/logos/3.svg" width="300"height="300"/>
           <Image alt="hcd"src="/logos/1.svg" width="150"height="150"/>
