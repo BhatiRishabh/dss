@@ -20,7 +20,7 @@ export function Quote() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         &quot;Design is the silent ambassador of your brand.&quot;
          
@@ -73,25 +73,25 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "group relative flex h-[20rem] w-full items-center justify-center bg-slate-50 dark:bg-black",
+        "group relative flex h-[20rem] w-full items-center justify-center bg-slate-50",
         containerClassName,
       )}
       onMouseMove={handleMouseMove}
     >
       <div
-        className="pointer-events-none absolute inset-0 dark:hidden"
+        className="pointer-events-none absolute inset-0 "
         style={{
           backgroundImage: dotPatterns.light.default,
         }}
       />
       <div
-        className="pointer-events-none absolute inset-0 hidden dark:block"
+        className="pointer-events-none absolute inset-0 hidden "
         style={{
           backgroundImage: dotPatterns.dark.default,
         }}
       />
       <motion.div
-        className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 dark:hidden"
+        className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 "
         style={{
           backgroundImage: dotPatterns.light.hover,
           WebkitMaskImage: useMotionTemplate`
@@ -111,7 +111,7 @@ export const HeroHighlight = ({
         }}
       />
       <motion.div
-        className="pointer-events-none absolute inset-0 hidden opacity-0 transition duration-300 group-hover:opacity-100 dark:block"
+        className="pointer-events-none absolute inset-0 hidden opacity-0 transition duration-300 group-hover:opacity-100 "
         style={{
           backgroundImage: dotPatterns.dark.hover,
           WebkitMaskImage: useMotionTemplate`
@@ -162,7 +162,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block rounded bg-gradient-to-r from-indigo-200 to-indigo-400 px-2 pb-1 dark:from-indigo-500 dark:to-indigo-300`,
+        `relative inline-block rounded bg-gradient-to-r from-indigo-200 to-indigo-400 px-2 pb-1 `,
         className,
       )}
     >
