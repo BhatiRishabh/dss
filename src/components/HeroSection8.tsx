@@ -67,7 +67,7 @@ export const HeroSection = () => {
           {/* <div className="flex sm:flex-row flex-col"><Image alt="hcd"src="/logos/3.svg" width="300"height="300"/>
           <Image alt="hcd"src="/logos/1.svg" width="150"height="150"/>
           <Image alt="hcd"src="/logos/2.svg" width="200"height="200"/></div> */}
-          <div className="mb-4 text-3xl italic font-bold">Presents</div>
+          <div className="mb-4 text-3xl italic font-bold">Present</div>
           {/* addLogo of HCD CDNM IIITD */}
           <h1 className="text-center sm:text-7xl md:text-8xl text-6xl font-black uppercase text-black  ">
           <span className="text-6xl sm:text-7xl md:text-8xl bg-gradient-to-r from-[#D8ECFF] via-[#56C1FF] to-[#EA80FC] bg-clip-text text-transparent font-bold tracking-tight">
