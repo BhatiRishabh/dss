@@ -5,7 +5,7 @@ const Aboutus = () => {
   return (
     <div>
         
-    <div className="w-full h-screen bg-slate-50">
+    <div className="w-full h-[90vh] bg-slate-50">
     <div className="md:h-1/4 sm:h-[20%] h-[16%] md:w-[80%] sm:w-[90%] mx-auto bg-indigo-200"></div>
     <div className="relative md:w-[70%] w-[80%] mx-auto ">
       <div className="absolute md:-top-[7rem] -top-[4rem] flex flex-col items-center">
