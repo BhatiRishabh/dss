@@ -58,7 +58,7 @@ const page = () => {
     {/* <section id='faqs'>
     <FAQ/>
     </section> */}
-    <section>
+    <section id="map">
     <Map/>
     </section>
     
