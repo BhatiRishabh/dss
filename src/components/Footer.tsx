@@ -2,7 +2,7 @@
 'use client';
 import Link from "next/link";
 import React from "react";
-import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa"; // Font Awesome icons
+import { FaLinkedin, FaFacebook, FaTwitter,FaInstagram } from "react-icons/fa"; // Font Awesome icons
 
 export function Footer() {
   return (
@@ -46,6 +46,12 @@ export function Footer() {
             <FaTwitter className="w-5 h-5 mr-2 text-gray-400 " />
             <span className="text-gray-400 ">Twitter</span>
           </Link>
+          <Link href="https://www.instagram.com/hcdiiitd" target="_blank" className="flex items-center ">
+            <FaInstagram className="w-5 h-5 mr-2 text-gray-400 " />
+            <span className="text-gray-400 ">Instagram</span>
+          </Link>
+          /
+
         </div>
       </div>
 
