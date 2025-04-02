@@ -3,14 +3,14 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Server Deploy Common Script
 ```bash
-cd /var/www/html/dss2025 && \
-rm -r 404 404.html carousel favicon.ico fonts img index.html index.txt logo _next next.svg vercel.svg && \
-rm -r logos && \
-wget https://github.com/BhatiRishabh/dss/archive/refs/heads/main.zip && \
-unzip main.zip && \
-cd dss-main && \
-cp -r out/* /var/www/html/dss2025 && \
-cd .. && \
+cd /var/www/html/dss2025 && 
+rm -r 404 404.html carousel favicon.ico fonts img index.html index.txt logo _next next.svg vercel.svg && 
+rm -r logos && 
+wget https://github.com/BhatiRishabh/dss/archive/refs/heads/main.zip && 
+unzip main.zip && 
+cd dss-main && 
+cp -r out/* /var/www/html/dss2025 && 
+cd .. && 
 rm -r main.zip dss-main
 ```
 ## Getting Started
