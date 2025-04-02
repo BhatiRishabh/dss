@@ -50,7 +50,7 @@ export function Footer() {
             <FaInstagram className="w-5 h-5 mr-2 text-gray-400 " />
             <span className="text-gray-400 ">Instagram</span>
           </Link>
-          /
+          
 
         </div>
       </div>
