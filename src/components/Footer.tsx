@@ -10,7 +10,8 @@ export function Footer() {
       {/* Logo and Description */}
       
       <div className="text-center md:text-left flex flex-col items-center md:items-start">
-        <img className="w-40 h-auto bg-slate-50 p-2 rounded-lg items-center" src="/img/Logo.png" alt="DSS Logo" />
+      <Link href="/" className="text-gray-400 hover:text-indigo-300 block">
+        <img className="w-40 h-auto bg-slate-50 p-2 rounded-lg items-center" src="/img/Logo.png" alt="DSS Logo" /></Link>
         {/* <p className="my-4 max-w-md text-center md:text-left">
         Transforming creative minds into design professionals through immersive learning experiences. 
         Organized by Department of Human Centered Design in collaboration with Center for Design and New Media
@@ -22,10 +23,10 @@ export function Footer() {
         <h2 className="font-bold text-xl mt-4 text-white">Quick Links</h2>
         <div className="w-30 h-1 border-b-2 border-indigo-400 rounded-2xl my-2"></div>
         <a href="/" className="text-gray-400 hover:text-indigo-300 block">Home</a>
-        <a href="/About/Lab" className="text-gray-400 hover:text-indigo-300 block">About us</a>
-        <a href="/Research" className="text-gray-400 hover:text-indigo-300 block">Research</a>
-        <a href="/JoinUs/FAQs" className="text-gray-400 hover:text-indigo-300 block">FAQs</a>
-        <a href="/JoinUs" className="text-gray-400 hover:text-indigo-300 block">Join Us</a>
+        <a href="#about" className="text-gray-400 hover:text-indigo-300 block">About us</a>
+        <a href="#themes" className="text-gray-400 hover:text-indigo-300 block">Themes</a>
+        <a href="#feature" className="text-gray-400 hover:text-indigo-300 block">Features</a>
+        <a href="#schedule" className="text-gray-400 hover:text-indigo-300 block">Schedule</a>
       </div>
 
       {/* Follow Us */}
@@ -34,14 +35,14 @@ export function Footer() {
         <div className="w-30 h-1 border-b-2 border-indigo-400 rounded-2xl my-2"></div>
         <div className="flex flex-col space-y-4 hover:text-indigo-300">
           <Link href="https://www.linkedin.com/company/hcdiiitd/posts/?feedView=all" className="flex items-center">
-            <FaLinkedin className="w-5 h-5 mr-2 text-gray-400 " />
+            <FaLinkedin className="w-5 h-5 mr-2 text-gray-400 "  target="_blank"/>
             <span className="text-gray-400 ">LinkedIn</span>
           </Link>
-          <Link href="https://www.facebook.com/hcdiiitd/" className="flex items-center ">
+          <Link href="https://www.facebook.com/hcdiiitd/" target="_blank"  className="flex items-center ">
             <FaFacebook className="w-5 h-5 mr-2 text-gray-400 " />
             <span className="text-gray-400 ">Facebook</span>
           </Link>
-          <Link href="https://x.com/hcdiiitd?lang=en" className="flex items-center ">
+          <Link href="https://x.com/hcdiiitd?lang=en" target="_blank" className="flex items-center ">
             <FaTwitter className="w-5 h-5 mr-2 text-gray-400 " />
             <span className="text-gray-400 ">Twitter</span>
           </Link>
@@ -53,10 +54,8 @@ export function Footer() {
         <h2 className="font-bold text-xl mt-4 text-white">Contact Us</h2>
         <div className="w-32 h-1 border-b-2 border-indigo-400 rounded-2xl my-2"></div>
         {/* <p className="text-gray-400">dss@iiiitd.ac.in</p> */}
-        <p className="text-gray-400">Indraprastha Institute of Information Technology Delhi</p>
-        <p className="text-gray-400">Okhla Phase III,</p>
-        <p className="text-gray-400">New Delhi,</p>
-        <p className="text-gray-400">Delhi 110020</p>
+        <p className="text-gray-400">IIIT Delhi(Indraprastha Institute <br /> of Information Technology Delhi), <br />Okhla Phase III,New Delhi,<br /> Delhi 110020</p>
+        
         <p className="text-gray-400">
           Email:{" "}
           <a href="mailto:dss@iiiitd.ac.in" className="underline">

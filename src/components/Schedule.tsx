@@ -29,7 +29,8 @@ const Schedule: React.FC = () => {
   return (
     <div className="px-4 py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
-        <h3 className="mb-4 text-center text-3xl font-semibold">Schedule</h3>
+        
+        <h2 className="sm:text-6xl md:text-7xl text-5xl pt-5 font-black text-center">Schedule</h2>
         {scheduleData.map((item, index) => (
           <Question
             key={index}

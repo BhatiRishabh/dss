@@ -49,7 +49,7 @@ export const HeroSection = () => {
       <div className="bg-slate-50">
         <div
           ref={scope}
-          className="grid h-[120vh]  w-full grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] grid-rows-[repeat(auto-fit,_minmax(75px,_1fr))]"
+          className="grid h-[110vh]  w-full grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] grid-rows-[repeat(auto-fit,_minmax(75px,_1fr))]"
 
         >
           {[...Array(size.rows * size.columns)].map((_, i) => (
@@ -67,9 +67,9 @@ export const HeroSection = () => {
           {/* <div className="flex sm:flex-row flex-col"><Image alt="hcd"src="/logos/3.svg" width="300"height="300"/>
           <Image alt="hcd"src="/logos/1.svg" width="150"height="150"/>
           <Image alt="hcd"src="/logos/2.svg" width="200"height="200"/></div> */}
-          <div className="mb-4 text-3xl italic font-bold">Present</div>
+          <div className="text-3xl italic font-bold pb-3">Present</div>
           {/* addLogo of HCD CDNM IIITD */}
-          <h1 className="text-center sm:text-7xl md:text-8xl text-6xl font-black uppercase text-black  ">
+          <h1 className="text-center sm:text-7xl md:text-8xl text-6xl font-black uppercase text-black pb-2  ">
           <span className="text-6xl sm:text-7xl md:text-8xl bg-gradient-to-r from-[#D8ECFF] via-[#56C1FF] to-[#EA80FC] bg-clip-text text-transparent font-bold tracking-tight">
   DESIGN
 </span>
@@ -78,10 +78,10 @@ export const HeroSection = () => {
     
         
         <div className="px-10"></div>
-                  <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-black "/>
+                  <TextSecondary words="12th May'25 to 16th May'25" className="font-bold text-black  pb-3 "/>
                  
           
-          <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className="p-4"/>
+          <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className=" pb-6"/>
           <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">
           <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-3xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
   Register

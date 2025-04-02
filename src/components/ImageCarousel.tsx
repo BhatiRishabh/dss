@@ -109,7 +109,7 @@ export function ImageCarousel() {
   ];
 
   return (
-    <div className="relative h-[30rem] scrollbar-hide p-10 bg-slate-50">
+    <div className="relative h-[50rem] scrollbar-hide p-10 bg-slate-50">
       <Carousel pauseOnHover>
         {imageSources.map((src, index) => (
           <div
