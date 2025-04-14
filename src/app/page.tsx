@@ -12,7 +12,8 @@ import { ThemeSection } from '@/components/Themes'
 import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
 import { SpeakerSection } from '@/components/SpeakerSection'
-import Aboutus from '@/components/Aboutus'
+import Aboutus from '@/components/Aboutus'  
+import EventCard from '@/components/EventCard'
 
 const page = () => {
   return (
@@ -32,7 +33,9 @@ const page = () => {
 
 
 
-   
+   <section>
+    <EventCard/>
+   </section>
 
     <section id='schedule'>
     {/* <Gallery/> */}
