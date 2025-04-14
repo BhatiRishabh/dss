@@ -33,14 +33,15 @@ const page = () => {
 
 
 
-   <section>
-    <EventCard/>
-   </section>
+   
 
     <section id='schedule'>
     {/* <Gallery/> */}
     <Schedule/>
     </section>
+    <section>
+    <EventCard/>
+   </section>
     
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
@@ -61,15 +62,16 @@ const page = () => {
     <section id='faqs'>
     <FAQ/>
     </section>
+    <section id='speakers'>
+      <SpeakerSection/>
+      </section>
     <section id="map">
     <Map/>
     </section>
     
     
 
-    <section id='speakers'>
-      <SpeakerSection/>
-      </section>
+   
 
 
   </div>

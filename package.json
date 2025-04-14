@@ -9,7 +9,7 @@
     "lint": "next lint",
     "meow": "npm i && next build && next dev",
     "postinstall": "flowbite-react patch",
-      "export": "next build && next export"
+    "export": "next build && next export"
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
@@ -17,6 +17,7 @@
     "flowbite-react": "^0.11.4",
     "framer-motion": "^12.5.0",
     "lenis": "^1.2.3",
+    "lucide-react": "^0.488.0",
     "motion": "^12.6.2",
     "next": "13.5.10",
     "react": "^18",

@@ -10,7 +10,9 @@ export function SpeakerSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-6 my-6 text-center">
-              <img
+              <Image
+              height={200}
+              width={200}
                 src={member.image}
                 alt={member.name}
                 className="w-full rounded-full mb-4"
@@ -27,23 +29,39 @@ export function SpeakerSection() {
 
 export const teamMembers = [
     {
-      name: "John Doe",
-      role: "Software Engineer",
+      name: "Dr. Sonal Keshwani",
+      role: "Ph.D(2018), IISc Banglore",
       image: "/img/sonal.png"
     },
     {
-      name: "Jane Smith",
-      role: "Graphic Designer",
-      image: "https://spacema-dev.com/elevate/assets/images/team/4.jpg"
+      name: "Dr. Richa Gupta",
+      role: "Ph.d IIT Delhi",
+      image: "/img/richa_gupta.jpg"
     },
     {
-      name: "Alex Johnson",
-      role: "Marketing Manager",
-      image: "https://spacema-dev.com/elevate/assets/images/team/3.jpg"
+      name: "Dr. Anmol Srivastava",
+      role: "Ph.d IIT Guwahati",
+      image: "/img/anmol_srivastav.jpg"
     },
     {
-      name: "Peter Johnson",
-      role: "SEO Specialist",
-      image: "https://spacema-dev.com/elevate/assets/images/team/2.jpg"
+      name: "Dr. Pragma Kar",
+      role: "Ph.D(2023), Jadavpur University",
+      image: "/img/Pragma.png"
+    },
+    {
+      name: "Dr. Jainendra Sukhla",
+      role: "Ph.D, Universitat Rovira i Virgili",
+      image: "/img/Jainendra.png"
+    },
+    {
+      name: "Dr. Rajiv Ratn Shah",
+      role: "Ph.D, National University of Singapore",
+      image: "/img/Rajiv.png"
+    }
+    ,
+    {
+      name: "Dr. Kalpana Shankhwar",
+      role: "Ph.D, National Taiwan University",
+      image: "/img/Kalpana.png"
     }
   ];
