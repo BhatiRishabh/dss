@@ -53,8 +53,9 @@ const NavLeft = ({
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
       <NavLink text="Schedule" links="#schedule" />
-      
-
+      <NavLink text="Events" links="#Events" />
+      <NavLink text="Keynote Speakers" links="#Speakers" />
+      <NavLink text="Instructors" links="#faculty" />
     </div>
   );
 };
@@ -121,6 +122,9 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       <MenuLink text="About" links="#about"/>
       <MenuLink text="Features" links="#feature"/>
       <MenuLink text="Schedule" links="#schedule" />
+      <MenuLink text="Events" links="#Events" />
+      <MenuLink text="Keynote Speakers" links="#Speakers" />
+      <MenuLink text="Instructors" links="#faculty" />
     </motion.div>
   );
 };

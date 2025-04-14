@@ -14,7 +14,7 @@ import Schedule from '@/components/Schedule'
 import { SpeakerSection } from '@/components/SpeakerSection'
 import Aboutus from '@/components/Aboutus'  
 import EventCard from '@/components/EventCard'
-
+import KeynoteSpeakers from '@/components/KeynoteSpeakers'
 const page = () => {
   return (
     <div>
@@ -39,15 +39,19 @@ const page = () => {
     {/* <Gallery/> */}
     <Schedule/>
     </section>
-    <section>
+    <section id='Speakers'><KeynoteSpeakers/></section>
+    <section id='Events'>
     <EventCard/>
    </section>
+
     
     <section id='about'>
       {/* <SwapColumnFeatures/> */}
       <Aboutus/>
     </section>
-
+    <section id='faculty'>
+      <SpeakerSection/>
+      </section>
     <section id='quote'>
     <Quote/>
     </section>
@@ -62,9 +66,7 @@ const page = () => {
     <section id='faqs'>
     <FAQ/>
     </section>
-    <section id='speakers'>
-      <SpeakerSection/>
-      </section>
+
     <section id="map">
     <Map/>
     </section>
