@@ -55,18 +55,18 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
-    {/* <section id='faqs'>
+    <section id='faqs'>
     <FAQ/>
-    </section> */}
+    </section>
     <section id="map">
     <Map/>
     </section>
     
     
 
-    {/* <section id='speakers'>
+    <section id='speakers'>
       <SpeakerSection/>
-      </section> */}
+      </section>
 
 
   </div>

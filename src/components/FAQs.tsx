@@ -14,30 +14,22 @@ const FAQ = () => {
         </h3>
         <Question title="Is the program open to beginners, or do I need prior design experience?" defaultOpen>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          The Design Summer School is open to everyone whether you&apos;re a beginner or already have some design experience. No prior background is required to attend.
           </p>
         </Question>
         <Question title="What is the registration deadline?">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          The registration deadline for DSS&apos;25 is 30th April 2025.
           </p>
         </Question>
         <Question title="Can I attend only specific sessions, or is it mandatory to attend the entire program?">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          Registration is required for the entire program, and there is no scope for partial registrations for individual sessions. However, once registered, you are free to attend sessions based on your interest and availability.
           </p>
         </Question>
         <Question title="What is the Design Summer School, and who is it for">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+          The Design Summer School is a 5-days event where the attendees get to participate in interesting talks, lectures, and workshops on various aspects of design. DSS is curated for students, industry professionals, designers, artists, and anyone interested in exploring design and its allied fields.
           </p>
         </Question>
       </div>
