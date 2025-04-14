@@ -6,7 +6,7 @@ export function SpeakerSection() {
     <section id="our-team" className="bg-gray-100 py-32">
       <div className="container mx-auto px-4">
       <h2 className="sm:text-6xl md:text-7xl text-5xl pb-4  font-black text-center">Instructors</h2>
-      Unleash Your Creativity and Ignite Your Design Passion: Dive into a Summer of Learning and Connection with the Industry's Leading Design Experts
+      Unleash Your Creativity and Ignite Your Design Passion: Dive into a Summer of Learning and Connection with the Industry&apos;s Leading Design Experts
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (

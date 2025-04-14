@@ -41,7 +41,7 @@ const EventCard = () => {
             Leading Cartoonists in India
           </p>
           <p className="mt-3 text-sm text-white text-justify">
-          A cartoonist is a visual artist who specialises in drawing cartoons... There is one such man ,it has been said about him that - "he has got Ink directly from Saraswati Maa",
+          A cartoonist is a visual artist who specialises in drawing cartoons... There is one such man ,it has been said about him that - &quot;he has got Ink directly from Saraswati Maa&quot;,
            a man with such persona is none other than Manoj Sinha, He started his journey from his native land Ranchi and is presently based in Delhi. 
            working with the Hindustan Times Group, New Delhi. 
           </p>
