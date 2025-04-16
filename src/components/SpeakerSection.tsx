@@ -36,12 +36,12 @@ export const teamMembers = [
     },
     {
       name: "Dr. Richa Gupta",
-      role: "Ph.d IIT Delhi",
+      role: "Ph.D IIT Delhi",
       image: "/img/richa_gupta.jpg"
     },
     {
       name: "Dr. Anmol Srivastava",
-      role: "Ph.d IIT Guwahati",
+      role: "Ph.D IIT Guwahati",
       image: "/img/anmol_srivastav.jpg"
     },
     {
