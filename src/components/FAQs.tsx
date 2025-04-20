@@ -26,9 +26,14 @@ const FAQ = () => {
           Registration is required for the entire program, and there is no scope for partial registrations for individual sessions. However, once registered, you are free to attend sessions based on your interest and availability.
           </p>
         </Question>
-        <Question title="What is the Design Summer School, and who is it for">
+        <Question title="What is the Design Summer School, and who is it for?">
           <p>
           The Design Summer School is a 5-days event where the attendees get to participate in interesting talks, lectures, and workshops on various aspects of design. DSS is curated for students, industry professionals, designers, artists, and anyone interested in exploring design and its allied fields.
+          </p>
+        </Question>
+        <Question title="What is the minimum attendance requirement to receive a certificate?">
+          <p>
+          To receive a certificate, you must attend at least 75% of the sessions. This ensures that you gain the maximum benefit from the program and can apply what you learn effectively.
           </p>
         </Question>
       </div>
