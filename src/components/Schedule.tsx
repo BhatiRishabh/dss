@@ -13,7 +13,7 @@ const scheduleData: ScheduleItem[] = [
   { date: "12th May 2025", topic: "Design Thinking Processes" },
   { date: "13th May 2025", topic: "Creative Thinking & Character Design" },
   { date: "14th May 2025", topic: "Sensing & HC AI" },
-  { date: "15th May 2025", topic: "Photography & Videography/Calligraphy" },
+  { date: "15th May 2025", topic: "Photography & Videography" },
   { date: "16th May 2025", topic: "XR & AR, VR & MR" },
 ];
 
