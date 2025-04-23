@@ -27,7 +27,7 @@ const Logo = () => {
   // Temp logo from https://logoipsum.com/
   return (
    <Link href='/'>
-   <Image src='/img/Logo.png' width='65' height='65' alt='logo'>
+   <Image src='/img/Logo.png' width='100' height='100' alt='logo'>
     </Image>
     </Link>
   );

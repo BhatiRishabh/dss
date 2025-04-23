@@ -48,7 +48,7 @@ export const ThemeSection = () => {
     <section className="overflow-hidden bg-slate-50 px-8 py-24 text-zinc-950">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 md:grid-cols-2 md:gap-8">
         <div>
-          <h3 className="text-5xl font-black leading-[1.25] md:text-7xl">
+          <h3 className="text-5xl font-black font-krona   leading-[1.25] md:text-7xl">
             Our Themes
           </h3>
           <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">

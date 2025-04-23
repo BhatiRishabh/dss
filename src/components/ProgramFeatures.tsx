@@ -38,7 +38,7 @@ export const ProgramFeatures = () => {
       <section className="overflow-hidden bg-slate-50 px-4 py-12">
         <div className="mx-auto max-w-6xl">
           <div className="mb-8 flex justify-between gap-4">
-            <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl text-indigo-500">
+            <h2 className="text-4xl font-bold font-krona  leading-[1.2] md:text-5xl text-indigo-500">
               We&apos;re good. <span className="text-neutral-400">Heres why.</span>
             </h2>
             <div className="flex gap-2">

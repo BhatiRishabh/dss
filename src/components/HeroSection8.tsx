@@ -69,8 +69,8 @@ export const HeroSection = () => {
           <Image alt="hcd"src="/logos/2.svg" width="200"height="200"/></div> */}
           <div className="text-3xl italic font-bold pb-3">Present</div>
           {/* addLogo of HCD CDNM IIITD */}
-          <h1 className="text-center sm:text-7xl md:text-8xl text-6xl font-black uppercase text-black pb-2  ">
-          <span className="text-6xl sm:text-7xl md:text-8xl bg-gradient-to-r from-[#D8ECFF] via-[#56C1FF] to-[#EA80FC] bg-clip-text text-transparent font-bold tracking-tight">
+          <h1 className="text-center sm:text-7xl md:text-8xl font-krona   text-6xl font-black uppercase text-black pb-2  ">
+          <span className="text-6xl sm:text-7xl  md:text-8xl bg-gradient-to-r from-[#D8ECFF] via-[#56C1FF] to-[#EA80FC] bg-clip-text text-transparent font-bold tracking-tight">
   DESIGN
 </span>
    <span className="sm:text-7xl md:text-8xl text-6xl"> <p>Summer School</p></span>

@@ -39,6 +39,7 @@ const page = () => {
     {/* <Gallery/> */}
     <Schedule/>
     </section>
+    
     <section id='Speakers'><KeynoteSpeakers/></section>
     <section id='Events'>
     <EventCard/>

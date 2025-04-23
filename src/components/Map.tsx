@@ -4,7 +4,7 @@ const Map = () => {
   return (
    <div className='bg-slate-50 '>
 
-   <h2 className="text-4xl leading-[1.2] px-4 font-bold bg-slate-50 md:text-5xl text-indigo-500 max-w-6xl mx-auto">
+   <h2 className="text-4xl font-krona   leading-[1.2] px-4 font-bold bg-slate-50 md:text-5xl text-indigo-500 max-w-6xl mx-auto">
    Where to find us ?
             </h2>
    <div className=' w-full  lg:h-[500px] bg-slate-50 flex flex-col items-center justify-center mx-auto sm:py-0 py-4 relative'>

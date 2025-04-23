@@ -21,24 +21,27 @@ const Helvetica = localFont({
 });
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const KronaOne = localFont({
+  src: "/fonts/KronaOne-Regular.ttf",
+  variable: "--font-krona-one",
+
+});
+
+// app/layout.tsx
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Suspense fallback={<Loading />}>
-      <body className={`${Helvetica.variable} antialiased`}>
-      {/* className={inter.className} */}
-        <div className='w-full bg-[#131313] fixed left-0 z-50'>      <Nav/></div>
-
+    <html
+      lang="en"
+      // inject both font-variables here
+      className={`${Helvetica.variable} ${KronaOne.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="antialiased">
+        <Nav />
         <DelayedLoader>{children}</DelayedLoader>
-        <Footer/>
+        <Footer />
       </body>
-      </Suspense>
-
-      
     </html>
   )
 }
+

@@ -22,3 +22,8 @@
   }
 }
 
+
+/* new: Krona One */
+.font-krona {
+  font-family: var(--font-krona-one);
+}
