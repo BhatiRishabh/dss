@@ -18,7 +18,7 @@ const FAQ = () => {
         </Question>
         <Question title="What is the registration deadline?">
           <p>
-          The registration deadline for DSS&apos;25 is 30th April 2025.
+          The registration deadline for DSS&apos;25 is 7th May 2025.
           </p>
         </Question>
         <Question title="What is the minimum attendance requirement to receive a certificate?">

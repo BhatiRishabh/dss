@@ -37,7 +37,8 @@ const Schedule: React.FC = () => {
             title={`${item.date}: ${item.topic}`}
             defaultOpen={index === 0}
           >
-            <p>Detailed information about {item.topic} will be provided soon.</p>
+            {/* <p>Detailed information about {item.topic} will be provided soon.</p> */}
+            <p></p>
           </Question>
         ))}
       </div>
