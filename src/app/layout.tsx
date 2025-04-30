@@ -10,7 +10,16 @@ import { Suspense } from 'react';
 import Loading from './loading';
 export const metadata: Metadata = {
   title: 'DSS 2025',
-  description: 'Our 5 Day Design Summer School is aimed at Networking, Learning, and Developing design solutions for real-world problems. Learn from the best in the industry.',
+  description:
+    'Our 5-Day Design Summer School is aimed at networking, learning, and developing design solutions for real-world problems.',
+  manifest: '/manifest.webmanifest',          // ← just add this
+  themeColor: '#ffffff',                      // helpful for some browsers
+  icons: {
+    icon: [
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+  },
 }
 
 const Helvetica = localFont({

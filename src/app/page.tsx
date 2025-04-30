@@ -13,6 +13,7 @@ import FAQ from '@/components/FAQs'
 import Schedule from '@/components/Schedule'
 import { SpeakerSection } from '@/components/SpeakerSection'
 import Aboutus from '@/components/Aboutus'  
+import Merch from '@/components/Merch'
 import EventCard from '@/components/EventCard'
 import KeynoteSpeakers from '@/components/KeynoteSpeakers'
 const page = () => {
@@ -64,6 +65,9 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
+    {/* <section id='merch'>
+      <Merch/>
+    </section> */}
     <section id='faqs'>
     <FAQ/>
     </section>
