@@ -66,4 +66,16 @@ export const teamMembers = [
       role: "Ph.D, National Taiwan University",
       image: "/img/Kalpana.png"
     }
+    ,
+    {
+      name: "Dr.Anoop Ratan",
+      role: "MFA, Teerthanker Mahaveer University",
+      image: "/img/anoopratan.jpg"
+    }
+    ,
+    {
+      name: "Dr. Aman Samuel",
+      role: "MBA, University of Madras",
+      image: "/img/amansamuel.jpg"
+    }
   ];
