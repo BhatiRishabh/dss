@@ -54,7 +54,7 @@ const NavLeft = ({
       <NavLink text="Features" links="#feature" />
       {/* <NavLink text="Merch" links="#merch"/> */}
       <NavLink text="Schedule" links="#schedule" />
-      <NavLink text="Events" links="#Events" />
+      <NavLink text="Workshops" links="#Events" />
       <NavLink text="Keynote Speaker" links="#Speakers" />
       <NavLink text="Mentors" links="#faculty" />
     </div>
@@ -124,7 +124,7 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       <MenuLink text="Features" links="#feature"/>
       {/* <MenuLink text="Merch" links="#merch"/> */}
       <MenuLink text="Schedule" links="#schedule" />
-      <MenuLink text="Events" links="#Events" />
+      <MenuLink text="Workshops" links="#Events" />
       <MenuLink text="Keynote Speakers" links="#Speakers" />
       <MenuLink text="Instructors" links="#faculty" />
       

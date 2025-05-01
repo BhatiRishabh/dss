@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'DSS 2025 – Design Summer School',
+    name: 'DSS 2025 - Design Summer School',
     short_name: 'DSS 2025',
     icons: [
       {

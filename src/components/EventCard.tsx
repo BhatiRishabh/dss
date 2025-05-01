@@ -31,8 +31,8 @@ const EventCard = () => {
       </div>
 
       {/* Content Section */}
-      <div className="p-4 flex flex-col justify-between">
-        <div>
+      <div className="p-2 flex flex-col justify-between">
+      <div className="ml-3">
           <h3 className="text-xl font-bold text-white">
           Workshop on Character Design by Manoj Sinha 
           </h3>
@@ -46,10 +46,10 @@ const EventCard = () => {
            working with the Hindustan Times Group, New Delhi. 
           </p>
         </div>
-        <div className="mt-4 text-sm">
+        <div className="mt-4 text-sm ml-3">
           <strong>Visit:</strong>
           <div className="flex items-center space-x-2 mt-2 hover:text-white">
-            <a href="mailto:chintan@csbhatiya.com" className="hover:underline">
+            <a href="https://www.cartoonistmanojsinha.com/" className="hover:underline">
             https://www.cartoonistmanojsinha.com/
             </a>
           </div>
@@ -62,7 +62,7 @@ const EventCard = () => {
     </motion.div>
     
     </div>
-    <div className="flex flex-col px-10 sm:px-60 py-10 space-y-2">
+    <div className="flex flex-col px-10 sm:px-60 pb-10 space-y-2">
      
     <motion.div
       className="flex flex-col md:flex-row items-center bg-indigo-400  rounded-xl border border-transparent dark:border-white/[0.2] shadow-lg overflow-hidden p-4 md:p-6 relative"
@@ -83,7 +83,7 @@ const EventCard = () => {
 
       {/* Content Section */}
       <div className="p-4 flex flex-col justify-between">
-        <div>
+        <div className="ml-1">
           <h3 className="text-xl font-bold text-white">
           Workshop on Photography by Bijendra Kumar
           </h3>
@@ -96,7 +96,18 @@ const EventCard = () => {
           With decades of experience across cultural festivals, exhibitions, and national art shows, his creative 
           lens captures India&apos;s heritage and emotion. Participants will gain insights from his award-winning artistry 
           and storytelling through visuals.
+
+          
           </p>
+        </div>
+        <div className="mt-4 text-sm">
+          <strong>Visit:</strong>
+          <div className="flex items-center space-x-2 mt-2 hover:text-white">
+            <a href="https://www.behance.net/bijendrart" className="hover:underline">
+            https://www.behance.net/bijendrart
+            </a>
+          </div>
+          
         </div>
        
       </div>
