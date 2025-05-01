@@ -9,7 +9,7 @@ import { Mail, Phone, Linkedin } from "lucide-react";
 const EventCard = () => {
   return (
     <div className="bg-slate-150">
-        <h2 className="sm:text-6xl md:text-7xl text-5xl pt-10 font-black font-krona    text-center">Upcoming Events</h2>
+        <h2 className="sm:text-5xl md:text-6xl text-5xl pt-10 font-black font-krona    text-center">Workshops by Guest Speakers </h2>
 
     <div className="flex flex-col px-10 sm:px-60 py-10 space-y-2">
      

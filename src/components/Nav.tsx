@@ -55,8 +55,8 @@ const NavLeft = ({
       {/* <NavLink text="Merch" links="#merch"/> */}
       <NavLink text="Schedule" links="#schedule" />
       <NavLink text="Events" links="#Events" />
-      <NavLink text="Keynote Speakers" links="#Speakers" />
-      <NavLink text="Instructors" links="#faculty" />
+      <NavLink text="Keynote Speaker" links="#Speakers" />
+      <NavLink text="Mentors" links="#faculty" />
     </div>
   );
 };
