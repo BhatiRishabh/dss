@@ -20,6 +20,7 @@ import KeynoteSpeakers from '@/components/KeynoteSpeakers'
 const page = () => {
   return (
     <div>
+      
 
     <section id='hero' className='bg-slate-50'>
       <HeroSection/> 

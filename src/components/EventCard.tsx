@@ -89,8 +89,9 @@ const EventCard = () => {
           </h3>
           <p className="italic text-white">
             
-            Leading Cartoonists in India
+            Leading Photographer in India
           </p>
+
           <p className="mt-3 text-sm text-white text-justify">
           Bijendra Kumar, a seasoned photographer and visual artist, joins DSS 2025 to share his mastery in photography. 
           With decades of experience across cultural festivals, exhibitions, and national art shows, his creative 

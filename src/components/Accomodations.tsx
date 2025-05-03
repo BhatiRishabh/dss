@@ -11,7 +11,7 @@ export default function Acc() {
           <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">Accommodation Form and Fees need to be paid separately.</p>
         <p className="mt-4 text-base sm:text-lg text-gray-600 text-justify ">
         Shared accommodation is available for the duration of the summer school, charged separately. <br />
-           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1HEJiuGhv0WuxKXSDN8gRsNdLKNqvoLaN/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
+           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1QQOJeyPb8EpwlqS63WfWZq0yMDlVvFdP/view" target="_blank">You can view or download the document.</Link></div> <br />
            To avail the same, apply by 7th May on the portal
         </p>
         <Link href="https://payments.iiitd.edu.in/pg/fees/pg.html" target="_blank">
@@ -19,8 +19,15 @@ export default function Acc() {
               Apply Now
             </button>
           </Link>
-          <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">*Accommodation Available for Limited Time</p>
-
+          <p className="mt-4 text-base font-bold sm:text-lg text-violet-600 text-justify "> Please Note :
+<br/>1. Accommodation is available for a limited time only.
+<br/>2. Kindly note that accommodation can only be availed between May 11 to May 17, 2025.
+<br/>3. Accommodation charges are not included in the registration fees.
+<br/>4. Accommodation does not include the cost of food.
+<br/>5. Seats for accommodation are limited and will be allotted on a first-come, first-served basis.
+<br/>6. Once paid, accommodation fees are strictly non-refundable.
+<br/>7. Please plan and register accordingly to secure your stay.
+</p>
         </div>
 
         <div className="w-full max-w-4xl h-[60vh] sm:h-[70vh] md:h-[90vh] shadow-lg border border-gray-300 rounded-lg overflow-hidden">

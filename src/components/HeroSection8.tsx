@@ -86,7 +86,26 @@ export const HeroSection = () => {
           <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-3xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
   Register
 </button>
+
 </Link>
+<p className="mt-10 sm:text-lg font-semibold text-violet-600 text-justify">
+    
+*Please note: Once the Fee has been paid, it is non-refundable. 
+<br />
+**Shared Accommodation is available at an additional cost.
+
+   
+
+  </p>
+{/* <Link href="#acc" className="z-[9999]">
+
+  <p className="mt-4 font-bold sm:text-lg text-violet-600 text-justify">
+    *Shared Accommodation is available at an additional cost.
+
+    
+  </p>
+</Link> */}
+
 
          {/* <HeroButton/> */}
         </div>

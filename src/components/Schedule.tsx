@@ -4,18 +4,88 @@ import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import useMeasure from "react-use-measure";
 
+interface EventItem {
+  time: string;
+  event: string;
+}
+
 interface ScheduleItem {
   date: string;
   topic: string;
+  details: EventItem[];
 }
 
 const scheduleData: ScheduleItem[] = [
-  { date: "12th May 2025", topic: "Design Thinking Processes" },
-  { date: "13th May 2025", topic: "Creative Thinking & Character Design" },
-  { date: "14th May 2025", topic: "Sensing & HC AI" },
-  { date: "15th May 2025", topic: "Photography & Videography" },
-  { date: "16th May 2025", topic: "XR & AR, VR & MR" },
+  {
+    date: "12th May 2025, Monday",
+    topic: "Design Thinking Processes",
+    details: [
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Opening ceremony & Keynote by Dr. Srinivasan Venkataraman" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Richa Gupta" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on Use of AI tools in design thinking by Mr.Arunesh Singh " },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+    ],
+  },
+  {
+    date: "13th May 2025, Tuesday",
+    topic: "Creative Thinking & Character Design",
+    details: [
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Character sketching by Mr.Manoj Sinha" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Mr.Manoj Sinha" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on design methods of creativity by Dr.Sonal Keshwani" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+    ],
+  },
+  {
+    date: "14th May 2025, Wednesday",
+    topic: "Sensing & HC AI",
+    details: [
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session on Demonstration and hands-on session on BCI by Dr. Priyanka Jain & team, C-DAC, MeitY" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+    ],
+  },
+  {
+    date: "15th May 2025, Thusday",
+    topic: "Photography & Videography/Storytelling",
+    details: [
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Photography by Mr.Bijendra Kumar" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session on Photography by Mr.Bijendra Kumar" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on mobile Photography and videography by Mr.Aman Samuel" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+
+
+    ],
+  },
+  {
+    date: "16th May 2025, Friday",
+    topic: "XR & AR, VR & MR",
+    details: [
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session " },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Anmol Srivastava" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 03:00 p.m.", event: "Hands-on Workshop in XR by Mr.Anshul Goswami" },
+      { time: "03:30 p.m. - 05:00 p.m.", event: "Closing Ceremony and Certificate Distribution" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "High Tea" },
+
+      
+    ],
+
+    
+  },
 ];
+
+
 
 const Schedule: React.FC = () => {
   const [mounted, setMounted] = useState<boolean>(false);
@@ -27,21 +97,34 @@ const Schedule: React.FC = () => {
   if (!mounted) return null;
 
   return (
-    <div className="px-4 py-12  bg-slate-50">
+    <div className="px-4 py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
-        
-        <h2 className="sm:text-6xl md:text-7xl text-5xl pt-5 font-black  font-krona   text-center">Schedule</h2>
+        <h2 className="sm:text-6xl md:text-7xl text-5xl pt-5 font-black font-krona text-center">Schedule</h2>
         {scheduleData.map((item, index) => (
           <Question
             key={index}
             title={`${item.date}: ${item.topic}`}
             defaultOpen={index === 0}
           >
-            {/* <p>Detailed information about {item.topic} will be provided soon.</p> */}
-            <p></p>
+            <ul className="list-disc pl-6 space-y-2">
+              {item.details.map((event, i) => (
+                <li key={i}>
+                  <span className="font-bold text-violet-600">{event.time}</span>
+                  <span className="text-black"> : {event.event}</span>
+                </li>
+              ))}
+            </ul>
           </Question>
         ))}
+        <p className="mt-10 sm:text-lg font-semibold text-violet-600 text-justify">
+    
+        *Please Note: To receive a certificate, you must attend at least 75% of the sessions. This ensures that you gain the maximum benefit from the program and can apply what you learn effectively.
+    
+       
+    
+      </p>
       </div>
+      
     </div>
   );
 };

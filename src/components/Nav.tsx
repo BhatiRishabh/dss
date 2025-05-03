@@ -142,7 +142,7 @@ const NavMenu = ({
       <MenuLink text="Themes" links="#themes" onClick={handleClick} />
       <MenuLink text="About" links="#about" onClick={handleClick} />
       <MenuLink text="Features" links="#feature" onClick={handleClick} />
-      <MenuLink text="Accommodation" links="#acc" onClick={handleClick} />
+      <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1QQOJeyPb8EpwlqS63WfWZq0yMDlVvFdP/view" onClick={handleClick} />
       <MenuLink text="Schedule" links="#schedule" onClick={handleClick} />
       <MenuLink text="Workshops" links="#Events" onClick={handleClick} />
       <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} />

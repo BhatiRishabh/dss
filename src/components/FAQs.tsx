@@ -9,7 +9,9 @@ const FAQ = () => {
     <>
     <div className="px-4 py-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
-       <h2 className="sm:text-6xl md:text-7xl text-5xl pt-10 font-black font-krona  text-center">Frequently asked questions</h2>
+      <h2 className="sm:text-6xl md:text-7xl text-5xl pt-10 font-black font-krona text-center " style={{ lineHeight: "1.5" }}>
+  Frequently asked <br /> questions
+</h2>
 
         <Question title="Is the program open to beginners, or do I need prior design experience?" defaultOpen>
           <p>
