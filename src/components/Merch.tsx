@@ -1,6 +1,7 @@
 // app/components/Merch.tsx
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Merch() {
   return (
@@ -20,14 +21,19 @@ export default function Merch() {
           </p>
 
           {/* Call-to-action with scale only */}
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 22 }}
             className="mt-8 px-6 py-3 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-xl hidden sm:inline-block"
           >
             Reach out
-          </motion.button>
+          </motion.button> */}
+          <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">
+            <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-2xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100 mt-6">
+              Register
+            </button>
+          </Link>
         </div>
 
         {/* Image column with scale only */}
