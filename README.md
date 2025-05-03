@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 sudo apt-get update \
   && sudo apt-get install -y openfortivpn \
   && sudo openfortivpn vpn.iiitd.edu.in:10443 --username=siddhant22496 \
-  && ssh siddhant22496@192.168.3.70
+  
 ```
 
 ## Server Deploy Common Script

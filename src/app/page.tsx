@@ -14,6 +14,7 @@ import Schedule from '@/components/Schedule'
 import { SpeakerSection } from '@/components/SpeakerSection'
 import Aboutus from '@/components/Aboutus'  
 import Merch from '@/components/Merch'
+import Acc from '@/components/Accomodations'
 import EventCard from '@/components/EventCard'
 import KeynoteSpeakers from '@/components/KeynoteSpeakers'
 const page = () => {
@@ -31,7 +32,7 @@ const page = () => {
 
     {/* <Features/> */}
 
-
+ <Acc/>
 
 
    
