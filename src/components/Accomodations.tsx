@@ -19,6 +19,8 @@ export default function Acc() {
               Apply Now
             </button>
           </Link>
+          <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">*Accommodation Available for Limited Time</p>
+
         </div>
 
         <div className="w-full max-w-4xl h-[90vh] shadow-lg border border-gray-300 rounded-lg overflow-hidden ">
