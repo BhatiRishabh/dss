@@ -23,13 +23,14 @@ export default function Acc() {
 
         </div>
 
-        <div className="w-full max-w-4xl h-[90vh] shadow-lg border border-gray-300 rounded-lg overflow-hidden ">
-          <iframe
-            src="/acc.pdf"
-            className="w-full h-full"
-            title="PDF Viewer"
-          />
-        </div>
+        <div className="w-full max-w-4xl h-[60vh] sm:h-[70vh] md:h-[90vh] shadow-lg border border-gray-300 rounded-lg overflow-hidden">
+  <iframe
+    src="/acc.pdf"
+    className="w-full h-full"
+    title="PDF Viewer"
+  />
+</div>
+
         </div>
         
       </div>
