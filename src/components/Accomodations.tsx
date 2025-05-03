@@ -3,7 +3,7 @@ export default function Acc() {
     return (
       <div className="py-20 px-8 md:py-28 md:px-40">
         
-        <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-10 ">
+        <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0 ">
         <div>
         <h2 className="text-3xl sm:text-5xl md:text-6xl text-justify font-black font-krona text-gray-800 leading-tight">
           Accommodations Available 
@@ -11,7 +11,7 @@ export default function Acc() {
           <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">Accommodation Form and Fees need to be paid separately.</p>
         <p className="mt-4 text-base sm:text-lg text-gray-600 text-justify ">
         Shared accommodation is available for the duration of the summer school, charged separately. <br />
-           Here is a step-by-step guide in PDF format. You can view or download the document. <br />
+           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1HEJiuGhv0WuxKXSDN8gRsNdLKNqvoLaN/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
            To avail the same, apply by 7th May on the portal
         </p>
         <Link href="https://payments.iiitd.edu.in/pg/fees/pg.html" target="_blank">

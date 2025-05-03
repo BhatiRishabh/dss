@@ -1,34 +1,53 @@
-'use client'
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Dispatch, SetStateAction, useState } from "react";
-import { FiMenu, FiArrowRight } from "react-icons/fi";
-import Image from "next/image";
+'use client';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Dispatch, SetStateAction, useState } from 'react';
+import { FiMenu, FiArrowRight } from 'react-icons/fi';
+import Image from 'next/image';
+
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-gray-50 ">
-      <FlipNav />
-    </div>
+    <>
+      <div className="bg-gray-50 z-50 relative">
+        <FlipNav isOpen={isOpen} setIsOpen={setIsOpen} />
+        {isOpen && (
+          <div
+            className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+            onClick={() => setIsOpen(false)}
+          ></div>
+        )}
+      </div>
+    </>
   );
 };
 
-const FlipNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const FlipNav = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
   return (
-    <nav className="bg-white sm:p-4 p-2 border-b-[1px] border-gray-200 flex items-center justify-between relative">
-      <NavLeft setIsOpen={setIsOpen} />
-      <NavRight />
-      <NavMenu isOpen={isOpen} />
+    <nav className="bg-white sm:p-4 p-2 border-b-[1px] border-gray-200 flex flex-col relative z-50">
+      <div className="flex items-center justify-between">
+        <NavLeft setIsOpen={setIsOpen} />
+        <NavRight />
+      </div>
+      {isOpen && (
+        <div className="lg:hidden mt-2">
+          <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
+      )}
     </nav>
   );
 };
 
 const Logo = () => {
-  // Temp logo from https://logoipsum.com/
   return (
-   <Link href='/'>
-   <Image src='/img/Logo.png' width='100' height='100' alt='logo'>
-    </Image>
+    <Link href="/">
+      <Image src="/img/Logo.png" width={100} height={100} alt="logo" />
     </Link>
   );
 };
@@ -52,9 +71,7 @@ const NavLeft = ({
       <NavLink text="Themes" links="#themes" />
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
-      <NavLink text="Accommodation" links="#acc"/>
-
-      {/* <NavLink text="Merch" links="#merch"/> */}
+      <NavLink text="Accommodation" links="#acc" />
       <NavLink text="Schedule" links="#schedule" />
       <NavLink text="Workshops" links="#Events" />
       <NavLink text="Keynote Speaker" links="#Speakers" />
@@ -62,7 +79,6 @@ const NavLeft = ({
     </div>
   );
 };
-
 
 type NavLinkProps = {
   text: string;
@@ -85,62 +101,71 @@ const NavLink = ({ text, links }: NavLinkProps) => {
     </Link>
   );
 };
+
 const NavRight = () => {
   return (
     <div className="flex items-center gap-4">
       <a href="#map">
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 hidden sm:block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
-      >
-        Reach out
-      </motion.button></a>
-      {/* <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium rounded-md whitespace-nowrap"
-      >
-        Register
-      </motion.button> */}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-4 py-2 hidden sm:block bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
+        >
+          Reach out
+        </motion.button>
+      </a>
       <Link href="https://forms.gle/qyqmH4FjPRoHP4iw8" target="_blank">
-      <button className="hidden sm:block pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3  font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
-  Register
-</button>
-</Link>
-
+        <button className="hidden sm:block pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
+          Register
+        </button>
+      </Link>
     </div>
   );
 };
 
-const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
+const NavMenu = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
+  const handleClick = () => setIsOpen(false);
+
   return (
     <motion.div
       variants={menuVariants}
       initial="closed"
-      animate={isOpen ? "open" : "closed"}
-      className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
+      animate={isOpen ? 'open' : 'closed'}
+      className="bg-white shadow-lg flex flex-col gap-4 px-4 py-4 border-t rounded-b-md"
     >
-      <MenuLink text="Themes" links="#themes" />
-      <MenuLink text="About" links="#about"/>
-      <MenuLink text="Features" links="#feature"/>
-      <MenuLink text="Accommodation" links="#acc"/>
-      {/* <MenuLink text="Merch" links="#merch"/> */}
-      <MenuLink text="Schedule" links="#schedule" />
-      <MenuLink text="Workshops" links="#Events" />
-      <MenuLink text="Keynote Speakers" links="#Speakers" />
-      <MenuLink text="Instructors" links="#faculty" />
-      
+      <MenuLink text="Themes" links="#themes" onClick={handleClick} />
+      <MenuLink text="About" links="#about" onClick={handleClick} />
+      <MenuLink text="Features" links="#feature" onClick={handleClick} />
+      <MenuLink text="Accommodation" links="#acc" onClick={handleClick} />
+      <MenuLink text="Schedule" links="#schedule" onClick={handleClick} />
+      <MenuLink text="Workshops" links="#Events" onClick={handleClick} />
+      <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} />
+      <MenuLink text="Instructors" links="#faculty" onClick={handleClick} />
     </motion.div>
   );
 };
 
-const MenuLink = ({ text,links }: { text: string,links:string }) => {
+const MenuLink = ({
+  text,
+  links,
+  onClick,
+}: {
+  text: string;
+  links: string;
+  onClick: () => void;
+}) => {
   return (
     <motion.a
-      variants={menuLinkVariants}
-      rel="nofollow"
+      onClick={onClick}
       href={links}
+      rel="nofollow"
+      variants={menuLinkVariants}
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>
@@ -161,15 +186,17 @@ export default Nav;
 const menuVariants = {
   open: {
     scaleY: 1,
+    opacity: 1,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.1,
     },
   },
   closed: {
     scaleY: 0,
+    opacity: 0,
     transition: {
-      when: "afterChildren",
+      when: 'afterChildren',
       staggerChildren: 0.1,
     },
   },
