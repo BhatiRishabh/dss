@@ -11,7 +11,7 @@ export default function Acc() {
           <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">Accommodation Form and Fees need to be paid separately.</p>
         <p className="mt-4 text-base sm:text-lg text-gray-600 text-justify ">
         Shared accommodation is available for the duration of the summer school, charged separately. <br />
-           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1OUEMbmZJm6qXVBez2AiRsBBEiSyrbvqn/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
+           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
            To avail the same, apply by 7th May on the portal
         </p>
         <Link href="https://payments.iiitd.edu.in/pg/fees/pg.html" target="_blank">
