@@ -72,7 +72,7 @@ const EventCard = () => {
       {/* Image Section */}
       <div className="flex-shrink-0 flex justify-center items-center">
         <Image
-          src="/img/Bijendra.png"
+          src="/img/Madhan_2024_2.jpg"
           alt="Founder"
           width={200}
           height={250}
@@ -85,23 +85,24 @@ const EventCard = () => {
       <div className="p-4 flex flex-col justify-between">
         <div className="ml-1">
           <h3 className="text-xl font-bold text-white">
-          Workshop on Photography by Bijendra Kumar
+          Session by Dr. Madhan Kumar Vasudevan
           </h3>
           <p className="italic text-white">
             
-            Leading Photographer in India
+          Assistant Professor, Department of Design, Indian Institute of Technology Roorkee (IITR)
           </p>
 
           <p className="mt-3 text-sm text-white text-justify">
-          Bijendra Kumar, a seasoned photographer and visual artist, joins DSS 2025 to share his mastery in photography. 
-          With decades of experience across cultural festivals, exhibitions, and national art shows, his creative 
-          lens captures India&apos;s heritage and emotion. Participants will gain insights from his award-winning artistry 
-          and storytelling through visuals.
+          Dr. Madhan Kumar Vasudevan is an Assistant Professor in the Department of Design at the Indian Institute of Technology Roorkee (IITR). 
+          His interdisciplinary research lies at the intersection of haptics, Human-Computer Interaction (HCI), and computational neuroscience, 
+          with a focus on the role of digital touch in enhancing multisensory interaction and wellbeing. His current research focuses on how mediated digital touch, especially affective touch, can influence our emotions and relationship dynamics. 
+          Before joining IITR, he was a Postdoctoral Research Fellow at University College London (UCL), where he worked on contactless haptics, funded by EU-Horizon 2020 FET project. He completed his Ph.D. in computational neuroscience and HCI at IIT Madras. 
+          Dr. Madhan received Healthy Ageing Challenges Award from UCLs Institute of Healthcare Engineering. His goal is to design new and meaningful multisensory experiences that support health, mindfulness, and well-being.
 
           
           </p>
         </div>
-        <div className="mt-4 text-sm">
+        {/* <div className="mt-4 text-sm">
           <strong>Visit:</strong>
           <div className="flex items-center space-x-2 mt-2 hover:text-white">
             <a href="https://www.behance.net/bijendrart" className="hover:underline">
@@ -109,7 +110,7 @@ const EventCard = () => {
             </a>
           </div>
           
-        </div>
+        </div> */}
        
       </div>
 

@@ -44,9 +44,9 @@ const scheduleData: ScheduleItem[] = [
     date: "14th May 2025, Wednesday",
     topic: "Sensing & HC AI",
     details: [
-      { time: "09:30 a.m. - 11:00 a.m.", event: "Session" },
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Multisensory Interface Technologies: From Design to Evaluation by Dr. Madhan Kumar Vasudevan" },
       { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      { time: "11:30 a.m. - 01:00 p.m.", event: "Session on Demonstration and hands-on session on BCI by Dr. Priyanka Jain & team, C-DAC, MeitY" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Demonstration and hands-on session on BCI by Dr. Priyanka Jain & team, C-DAC, MeitY" },
       { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
       { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop" },
       { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
@@ -56,9 +56,9 @@ const scheduleData: ScheduleItem[] = [
     date: "15th May 2025, Thusday",
     topic: "Photography & Videography/Storytelling",
     details: [
-      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Photography by Mr.Bijendra Kumar" },
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session " },
       { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      { time: "11:30 a.m. - 01:00 p.m.", event: "Session on Photography by Mr.Bijendra Kumar" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session " },
       { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
       { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on mobile Photography and videography by Mr.Aman Samuel" },
       { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
