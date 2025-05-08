@@ -97,7 +97,7 @@ const Schedule: React.FC = () => {
   if (!mounted) return null;
 
   return (
-    <div className="px-4 py-12 bg-slate-50">
+    <div className="px-4 pt-12 bg-slate-50">
       <div className="mx-auto max-w-6xl">
         <h2 className="sm:text-6xl md:text-7xl text-5xl pt-5 font-black font-krona text-center">Schedule</h2>
         {scheduleData.map((item, index) => (

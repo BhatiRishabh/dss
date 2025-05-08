@@ -17,6 +17,9 @@ import Merch from '@/components/Merch'
 import Acc from '@/components/Accomodations'
 import EventCard from '@/components/EventCard'
 import KeynoteSpeakers from '@/components/KeynoteSpeakers'
+import PreReq from '@/components/prereq'
+
+
 const page = () => {
   return (
     <div>
@@ -42,6 +45,7 @@ const page = () => {
     <section id='schedule'>
     {/* <Gallery/> */}
     <Schedule/>
+    <PreReq/>
     </section>
     
     <section id='Speakers'><KeynoteSpeakers/></section>
