@@ -14,9 +14,13 @@ export default function Acc() {
            Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
            To avail the same, apply by 7th May on the portal
         </p>
-        <Link href="https://payments.iiitd.edu.in/pg/fees/pg.html" target="_blank">
+        {/* <h2 className="text-2xl sm:text-4xl md:text-5xl text-justify font-black font-krona text-violet-600leading-tight">
+          Accommodations Closed
+          </h2> */}
+
+        <Link href="/" >
             <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-2xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100 mt-6">
-              Apply Now
+              Applications Closed
             </button>
           </Link>
           <p className="mt-4 text-base font-bold sm:text-lg text-violet-600 text-justify "> Please Note :
