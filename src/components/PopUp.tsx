@@ -27,7 +27,7 @@ export default function PopupAlert() {
           </button>
         </div>
         <p className="mt-4 text-gray-700">
-        Due to pressing national considerations, DSS 2025 cannot proceed as planned. We will get back to you with rescheduled dates at the earliest.
+        In light of the current red alert situation in Delhi, we have decided to postpone the Design Summer School until further notice. We sincerely apologize for any inconvenience this may cause and appreciate your understanding during this time.      
         </p>
       </div>
     </div>
