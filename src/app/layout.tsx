@@ -7,6 +7,7 @@ import Nav from '@/components/Nav'
 // const inter = Inter({ subsets: ['latin'] })
 import localFont from "next/font/local";
 import { Suspense } from 'react';
+import PopupAlert from '@/components/PopUp'
 import Loading from './loading';
 export const metadata: Metadata = {
   title: 'DSS 2025',
@@ -48,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         
         <Nav />
-        <DelayedLoader>{children}</DelayedLoader>
+        <DelayedLoader><PopupAlert />{children}</DelayedLoader>
         <Footer />
       </body>
     </html>
