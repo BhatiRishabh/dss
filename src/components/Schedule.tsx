@@ -26,6 +26,7 @@ const scheduleData: ScheduleItem[] = [
       { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
       { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on Use of AI tools in design thinking by Mr.Arunesh Singh " },
       { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+      
     ],
   },
   {
@@ -50,6 +51,8 @@ const scheduleData: ScheduleItem[] = [
       { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
       { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop" },
       { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+      
+      
     ],
   },
   {
