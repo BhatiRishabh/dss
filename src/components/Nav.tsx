@@ -71,10 +71,10 @@ const NavLeft = ({
       <NavLink text="Themes" links="#themes" />
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
-      <NavLink text="Accommodation" links="#acc" />
+      {/* <NavLink text="Accommodation" links="#acc" /> */}
       <NavLink text="Schedule" links="#schedule" />
-      <NavLink text="Workshops" links="#Events" />
-      <NavLink text="Keynote Speaker" links="#Speakers" />
+      {/* <NavLink text="Workshops" links="#Events" /> */}
+      {/* <NavLink text="Keynote Speaker" links="#Speakers" /> */}
       <NavLink text="Mentors" links="#faculty" />
     </div>
   );
@@ -114,9 +114,9 @@ const NavRight = () => {
           Reach out
         </motion.button>
       </a>
-      <Link href="" target="">
+      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdzcs7iO5O46GLZTQEsTrdlL01bOlKWjABINNgGZXlT-YKDSg/viewform" target="">
         <button className="hidden sm:block pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
-          Event Postponed
+          REGISTER
         </button>
       </Link>
     </div>
@@ -142,10 +142,10 @@ const NavMenu = ({
       <MenuLink text="Themes" links="#themes" onClick={handleClick} />
       <MenuLink text="About" links="#about" onClick={handleClick} />
       <MenuLink text="Features" links="#feature" onClick={handleClick} />
-      <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" onClick={handleClick} />
+      {/* <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" onClick={handleClick} /> */}
       <MenuLink text="Schedule" links="#schedule" onClick={handleClick} />
-      <MenuLink text="Workshops" links="#Events" onClick={handleClick} />
-      <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} />
+      {/* <MenuLink text="Workshops" links="#Events" onClick={handleClick} /> */}
+      {/* <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} /> */}
       <MenuLink text="Instructors" links="#faculty" onClick={handleClick} />
     </motion.div>
   );

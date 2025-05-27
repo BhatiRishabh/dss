@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         
         <Nav />
-        <DelayedLoader><PopupAlert />{children}</DelayedLoader>
+        <DelayedLoader>{children}</DelayedLoader>
         <Footer />
       </body>
     </html>

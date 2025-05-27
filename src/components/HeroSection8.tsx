@@ -78,13 +78,13 @@ export const HeroSection = () => {
     
         
         <div className="px-10"></div>
-                  <TextSecondary words="Dates to be announced..." className="font-bold text-black  pb-3 "/>
+                  <TextSecondary words="21st July 2025 to 25th July 2025" className="font-bold text-black  pb-3 "/>
                  
           
           <TextSecondary words="Transforming creative minds into design professionals through immersive learning experiences" className=" pb-6"/>
-          <Link href="" target="">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdzcs7iO5O46GLZTQEsTrdlL01bOlKWjABINNgGZXlT-YKDSg/viewform" target="">
           <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-3xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100">
-          Event Postponed
+          Register Now
 </button>
 
 </Link>

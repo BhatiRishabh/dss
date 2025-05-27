@@ -51,9 +51,9 @@ export const ThemeSection = () => {
           <h3 className="text-5xl font-black font-krona   leading-[1.25] md:text-7xl">
             Our Themes
           </h3>
-          <Link href="" target="">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdzcs7iO5O46GLZTQEsTrdlL01bOlKWjABINNgGZXlT-YKDSg/viewform" target="">
             <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-2xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100 mt-6">
-            Event Postponed
+            Register
             </button>
           </Link>
         </div>
