@@ -11,21 +11,21 @@ export default function Acc() {
           <p className="mt-4 text-base sm:text-lg text-violet-600 text-justify ">Accommodation Form and Fees need to be paid separately.</p>
         <p className="mt-4 text-base sm:text-lg text-gray-600 text-justify ">
         Shared accommodation is available for the duration of the summer school, charged separately. <br />
-           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
-           To avail the same, apply by 7th May on the portal
+           Here is a step-by-step guide in PDF format. <div className="text-bold text-violet-600 underline"><Link href="https://drive.google.com/file/d/1PDuvJ-mXDMT047d-T_pj-bF61cK5UfSE/view?usp=sharing" target="_blank">You can view or download the document.</Link></div> <br />
+           To avail the same, apply by 28th June 2025 on the portal
         </p>
         {/* <h2 className="text-2xl sm:text-4xl md:text-5xl text-justify font-black font-krona text-violet-600leading-tight">
           Accommodations Closed
           </h2> */}
 
-        <Link href="/" >
+        <Link href="https://payments.iiitd.edu.in/pg/fees/pg.html" >
             <button className="pointer-events-auto rounded-xl bg-indigo-500 px-6 py-3 text-2xl font-extrabold uppercase text-neutral-50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-100 mt-6">
-              Applications Closed
+              Pay for Accommodations
             </button>
           </Link>
           <p className="mt-4 text-base font-bold sm:text-lg text-violet-600 text-justify "> Please Note :
 <br/>1. Accommodation is available for a limited time only.
-<br/>2. Kindly note that accommodation can only be availed between May 11 to May 17, 2025.
+<br/>2. Kindly note that accommodation can only be availed between July 20 to July 26, 2025.
 <br/>3. Accommodation charges are not included in the registration fees.
 <br/>4. Accommodation does not include the cost of food.
 <br/>5. Seats for accommodation are limited and will be allotted on a first-come, first-served basis.

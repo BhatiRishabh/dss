@@ -35,9 +35,9 @@ const page = () => {
     {/* <Features/> */}
 
     {/* <Features/> */}
-    {/* <section id="acc">
+    <section id="acc">
  <Acc/>
- </section> */}
+ </section>
 
 
    

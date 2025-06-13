@@ -71,7 +71,7 @@ const NavLeft = ({
       <NavLink text="Themes" links="#themes" />
       <NavLink text="About" links="#about" />
       <NavLink text="Features" links="#feature" />
-      {/* <NavLink text="Accommodation" links="#acc" /> */}
+      <NavLink text="Accommodation" links="#acc" />
       <NavLink text="Schedule" links="#schedule" />
       {/* <NavLink text="Workshops" links="#Events" /> */}
       {/* <NavLink text="Keynote Speaker" links="#Speakers" /> */}
@@ -142,7 +142,7 @@ const NavMenu = ({
       <MenuLink text="Themes" links="#themes" onClick={handleClick} />
       <MenuLink text="About" links="#about" onClick={handleClick} />
       <MenuLink text="Features" links="#feature" onClick={handleClick} />
-      {/* <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1yprVZbt4I8AhwdfFzQTkuK7NAvlX4d_H/view?usp=sharing" onClick={handleClick} /> */}
+      <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1PDuvJ-mXDMT047d-T_pj-bF61cK5UfSE/view?usp=sharing" onClick={handleClick} />
       <MenuLink text="Schedule" links="#schedule" onClick={handleClick} />
       {/* <MenuLink text="Workshops" links="#Events" onClick={handleClick} /> */}
       {/* <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} /> */}
