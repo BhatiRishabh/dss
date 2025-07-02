@@ -20,72 +20,61 @@ const scheduleData: ScheduleItem[] = [
     date: "21st July 2025, Monday",
     topic: "Design Thinking Processes",
     details: [
-      // { time: "09:30 a.m. - 11:00 a.m.", event: "Opening ceremony & Keynote by Dr. Srinivasan Venkataraman" },
-      // { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      // { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Richa Gupta" },
-      // { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
-      // { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on Use of AI tools in design thinking by Mr.Arunesh Singh " },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
-      
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Opening ceremony & Keynote by Dr. Richa Gupta, Venue B003 R&D " },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Richa Gupta, Venue B003 R&D" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on Use of AI tools in design thinking by Mr.Arunesh Singh, Venue B003 R&D " },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
     ],
   },
   {
     date: "22nd July 2025, Tuesday",
     topic: "Creative Thinking & Character Design",
     details: [
-      // { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Character sketching by Mr.Manoj Sinha" },
-      // { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      // { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Mr.Manoj Sinha" },
-      // { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
-      // { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on design methods of creativity by Dr.Sonal Keshwani" },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Character sketching by Mr.Manoj Sinha, Venue B003 R&D" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Mr.Manoj Sinha, Venue B003 R&D" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on design methods of creativity by Dr.Sonal Keshwani, Venue B003 R&D" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
     ],
   },
   {
     date: "23rd July 2025, Wednesday",
     topic: "Sensing & HC AI",
     details: [
-      // { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Multisensory Interface Technologies: From Design to Evaluation by Dr. Madhan Kumar Vasudevan" },
-      // { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      // { time: "11:30 a.m. - 01:00 p.m.", event: "Demonstration and hands-on session on BCI by Dr. Priyanka Jain & team, C-DAC, MeitY" },
-      // { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
-      // { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop" },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
-      
-      
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session on Multisensory Interface Technologies: From Design to Evaluation by Dr. Madhan Kumar Vasudevan, Venue B003 R&D" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Demonstration and hands-on session on BCI by Dr. Priyanka Jain & team, C-DAC, MeitY, Venue B003 R&D" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop, Venue B003 R&D" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },    
     ],
   },
   {
     date: "24th July 2025, Thusday",
     topic: "Photography & Videography/Storytelling",
     details: [
-      // { time: "09:30 a.m. - 11:00 a.m.", event: "Session " },
-      // { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      // { time: "11:30 a.m. - 01:00 p.m.", event: "Session " },
-      // { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
-      // { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on mobile Photography and videography by Mr.Aman Samuel" },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
-
-
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Photography, Venue B105 R&D" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Photography, Venue B105 R&D " },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 05:00 p.m.", event: "Workshop on mobile Photography and videography by Mr.Aman Samuel, Venue B105 R&D" },
+      { time: "05:00 p.m. - 05:15 p.m.", event: "Tea" },
     ],
   },
   {
     date: "25th July 2025, Friday",
     topic: "XR & AR, VR & MR",
     details: [
-      // { time: "09:30 a.m. - 11:00 a.m.", event: "Session " },
-      // { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
-      // { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Anmol Srivastava" },
-      // { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
-      // { time: "02:00 p.m. - 03:00 p.m.", event: "Hands-on Workshop in XR by Mr.Anshul Goswami" },
-      // { time: "03:30 p.m. - 05:00 p.m.", event: "Closing Ceremony and Certificate Distribution" },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "High Tea" },
-      // { time: "05:00 p.m. - 05:15 p.m.", event: "High Tea" },
-
-      
-    ],
-
-    
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Session by Dr.Kalpana Shankhwar, Venue B003 R&D" },
+      { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
+      { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Anmol Srivastava, Venue B003 R&D" },
+      { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },
+      { time: "02:00 p.m. - 03:00 p.m.", event: "Closing Ceremony and Certificate Distribution by Prof. Bose, Venue B003 R&D" },
+      { time: "03:00 p.m. - 04:00 p.m.", event: "Tea" },
+    ],    
   },
 ];
 

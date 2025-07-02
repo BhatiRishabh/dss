@@ -49,9 +49,9 @@ const page = () => {
     </section>
     
     {/* <section id='Speakers'><KeynoteSpeakers/></section> */}
-    {/* <section id='Events'>
+    <section id='Events'>
     <EventCard/>
-   </section> */}
+   </section>
 
     
     <section id='about'>
@@ -72,9 +72,9 @@ const page = () => {
     <section id='feature'>
       <ProgramFeatures/>
     </section>
-    {/* <section id='merch'>
+    <section id='merch'>
       <Merch/>
-    </section> */}
+    </section>
     <section id='faqs'>
     <FAQ/>
     </section>
