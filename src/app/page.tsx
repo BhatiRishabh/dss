@@ -48,7 +48,7 @@ const page = () => {
     <PreReq/>
     </section>
     
-    {/* <section id='Speakers'><KeynoteSpeakers/></section> */}
+    <section id='Speakers' ><KeynoteSpeakers/></section>
     <section id='Events'>
     <EventCard/>
    </section>

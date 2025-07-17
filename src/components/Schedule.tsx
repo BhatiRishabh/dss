@@ -20,7 +20,8 @@ const scheduleData: ScheduleItem[] = [
     date: "21st July 2025, Monday",
     topic: "Design Thinking Processes",
     details: [
-      { time: "09:30 a.m. - 11:00 a.m.", event: "Opening ceremony & Keynote by Dr. Richa Gupta, Venue B003 R&D " },
+      { time: "08:45 a.m. - 09:15 a.m.", event: "Registration, Merchandise Distribution, and Breakfast" },
+      { time: "09:30 a.m. - 11:00 a.m.", event: "Opening ceremony & Keynote by Dr.Srinivasan Venkataraman, Venue B003 R&D " },
       { time: "11:00 a.m. - 11:30 a.m.", event: "Tea" },
       { time: "11:30 a.m. - 01:00 p.m.", event: "Session by Dr.Richa Gupta, Venue B003 R&D" },
       { time: "01:00 p.m. - 02:00 p.m.", event: "Lunch" },

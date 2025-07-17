@@ -74,7 +74,7 @@ const NavLeft = ({
       <NavLink text="Accommodation" links="#acc" />
       <NavLink text="Schedule" links="#schedule" />
       <NavLink text="Workshops" links="#Events" />
-      {/* <NavLink text="Keynote Speaker" links="#Speakers" /> */}
+      <NavLink text="Keynote Speaker" links="#Speakers" />
       <NavLink text="Mentors" links="#faculty" />
     </div>
   );
@@ -145,7 +145,7 @@ const NavMenu = ({
       <MenuLink text="Accommodation" links="https://drive.google.com/file/d/1PDuvJ-mXDMT047d-T_pj-bF61cK5UfSE/view?usp=sharing" onClick={handleClick} />
       <MenuLink text="Schedule" links="#schedule" onClick={handleClick} />
       <MenuLink text="Workshops" links="#Events" onClick={handleClick} />
-      {/* <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} /> */}
+      <MenuLink text="Keynote Speakers" links="#Speakers" onClick={handleClick} />
       <MenuLink text="Instructors" links="#faculty" onClick={handleClick} />
     </motion.div>
   );
