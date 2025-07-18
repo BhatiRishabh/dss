@@ -261,6 +261,50 @@ const EventCard = () => {
   </motion.div>
 </div>
 
+<div className="flex flex-col px-10 sm:px-60 pb-10 space-y-2">
+  <motion.div
+    className="flex flex-col md:flex-row items-center bg-indigo-400 rounded-xl border border-transparent dark:border-white/[0.2] shadow-lg overflow-hidden p-4 md:p-6 relative"
+    whileHover={{ scale: 1.03 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    {/* Image Section */}
+    <div className="flex-shrink-0 flex justify-center items-center">
+      <Image
+        src="/img/Brijendra.png" // Replace with actual image path
+        alt="Bijendra Kumar"
+        width={200}
+        height={250}
+        className="rounded-xl border-4 border-white shadow-lg"
+        priority
+      />
+    </div>
+
+    {/* Content Section */}
+    <div className="p-2 flex flex-col justify-between">
+      <div className="ml-3">
+        <h3 className="text-xl font-bold text-white">
+          Visual Storytelling & Fine Arts by Mr. Bijendra Kumar
+        </h3>
+        <p className="italic text-white">
+          Sr. Photographer, NGMA | Artist & Educator
+        </p>
+        <p className="mt-3 text-sm text-white text-justify">
+          Bijendra Kumar is a seasoned visual artist and senior photographer at the National Gallery of Modern Art. With 15+ years across photography, painting, and animation, his work has been showcased in 60+ exhibitions and honored with awards like the CCRT Junior Fellowship and Lalit Kala Akademi accolades.
+        </p>
+      </div>
+      <div className="mt-4 text-sm ml-3">
+        <strong>Visit:</strong>
+        <div className="flex items-center space-x-2 mt-2 hover:text-white">
+          <a href="https://www.behance.net/bijendrart" className="hover:underline" target="_blank" rel="noopener noreferrer">
+            Behance Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </motion.div>
+</div>
+
+
 
         
     
